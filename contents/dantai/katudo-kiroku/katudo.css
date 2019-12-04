@@ -1,0 +1,47 @@
+body { 
+	 line-height:110%; 
+	color: #000000; 
+	padding-left:1em; 
+	}
+
+h1 {
+	font-size: 1.4em :
+	font-weight: bold;
+	text-align: center;
+	}
+
+h4 {
+	font-size: 0.8em :
+	font-weight: bold;
+	text-align: right;
+	}
+
+p { 
+	text-indent:1em;
+	font-family: serif;	
+	}
+
+.e1 { 
+	 font-size:1em; 
+	 font-weight:normal; 
+	 color: #000000;
+	 }
+
+.e1b { 
+	font-size:1em; 
+	font-weight:bold; 
+	color: #000000;
+	}
+
+.e2 { 
+	 line-height:120%; 
+	font-size:1em; 
+	font-weight:bold; 
+	color: #000000;
+	}
+
+hr {
+	height: 2px;
+	border-style : none ;
+	background-color: #99cc99 ;
+	}

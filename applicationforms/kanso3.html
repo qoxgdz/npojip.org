@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-type" content="text/css" />
+<meta http-equiv="Content-Script-type" content="text/javascript" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.npojip.org/contents/whatsnew.rdf" />
+<!-- 作成日 2015/01/06  00:00:00 -->
+<title>連絡フォーム</title>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="590" align="center">
+	<tr>
+		<td height="6" bgcolor="yellow"></td>
+    </tr>
+	<tr>
+		<td>
+		当センターへの連絡は下記フォームをご利用ください。※は必須項目です。<br />
+		取材や講演依頼などの場合は、その旨をご記入くださいますようお願いします。
+		</td>
+	 </tr>
+	 <tr>
+		<td><br />
+		<table border="1" cellpadding="4" cellspacing="0" width="100%"><tr><td>
+
+<!-- (注)formタグについて 
+	 action属性の値は、このファイルからみたperlmail.cgiの相対
+	パスまたは http:// から始まる完全なURLにして下さい。
+	method属性の値は、method not implemented..というエラーが 
+	 出る場合は、postをGETに書き換えて下さい。　　　　　　　  
+-->
+
+<form method="post" action="https://npojip.org/cgi-bin/perlmail.cgi">
+
+<!-- (注)入力必須項目の設定について 　　　　　　　　　　　　　　　　　　　　　　　　　　　　 
+	入力必須項目を設定するには、formタグの次に下の一行を記述
+	して下さい。他のinputタグより前に記述する必要があります。
+	また、value属性の値は、入力必須項目にする項目名(それぞれ
+	の項目のname属性の値)をカンマで区切って列記して下さい。
+	下の例では、名前、性別、年齢の3つの項目を入力必須項目に
+	指定しています。
+	入力必須項目がない場合は、下の一行は記述しないで下さい。
+-->
+
+<input type="hidden" name="Require" value="E-Mail,ふりがなー姓,ふりがなー名,姓,名,メッセージ" />
+
+<!-- (注)メールの件名の設定について
+	メールの件名を設定するには、下の一行を記述して下さい。
+	value属性の値は、メールの件名にして下さい。(日本語も可)
+	この行がない場合は、件名は「from PerlMailer」となります。
+-->
+
+<input type="hidden" name="Subject" value="連絡フォーム" />
+
+<!-- (注)メール送信後に表示するページの設定について
+	メール送信後に表示するページを設定するには、下の一行を記
+	述して下さい。value属性の値は、そのページのURLにして下さ
+	い(http://から始まる完全なURLを記述すること)。この行がな
+	い場合は、デフォルトの簡単なメッセージが表示されます。
+-->
+
+<input type="hidden" name="Thanks" value="http://www.npojip.org/applicationforms/thanks4.html" />
+
+<!-- (注)メールアドレスについて
+	メールアドレスを入力する項目を作る場合は、下のように必ず
+	name属性の値を「E-Mail」にして下さい。
+	通常、CGIから送られたメールは、差出人が nobody や www 等
+	となるため、そのメールに返信しようとすると、メールソフト
+	は宛先を「nobody@cgi.din.or.jp」のように設定してしまい、
+	自分で正しいメールアドレスに書き直さなければなりません。
+	そこで、PerlMailerでは、「E-Mail」の項目に入力されたアド
+	レスが、返信の宛先として設定されるように設計しています。
+-->
+◇（半角）メールアドレス※：　<input name="E-Mail" size="30" maxlength="50" /><br />
+◇（全角）ふりがな※：姓<input name="ふりがなー姓" size="20" maxlength="50" />名<input name="ふりがなー名" size="20" maxlength="50" /><br />
+◇（全角）　　氏名※：姓<input name="姓" size="20" maxlength="50" />名<input name="名" size="20" maxlength="50" /><br />
+◇（半角）郵便番号：<input name="郵便番号１" size="3" maxlength="3" />ー
+<input name="郵便番号２" size="4" maxlength="4" /><br />
+◇（全角）住所※：<br />
+　　　　　<textarea name="住所" rows="5" cols="60"></textarea><br />
+◇職業：<input name="職業" size="60" maxlength="100" /><br />
+<br /><br />
+		<img src="images/rhomb02e.gif" width="14" height="14" border="0" alt="rhomb02e.gif" />
+		<font size="4"><b>メッセージ※</b></font><br />
+<textarea name="メッセージ" rows="30" cols="80"></textarea><br /><br />
+
+<!-- (注)入力内容確認画面の表示について
+	確認画面を表示するか否か選択させたい場合は、下の一行を記述して下さい。
+	確認画面を表示させたくない場合は、下の一行は記述しないで下さい。
+	確認画面を必ず表示させたい場合は、下の一行の代わりに次のように記述して
+	下さい。　<input type="hidden" name="Check" value="on">
+-->
+<br />
+<input type="checkbox" name="Check" value="on" checked="checked" />確認画面を表示する
+<br />
+<h4>送信ボタンを１回だけ押してください。</h4>
+<input type="submit" value="送信" />
+<input type="reset" value="リセット" />
+<font size="2">　※IPアドレスを記録しています。悪質なメールはお止め下さい。</font>
+</form>
+<hr />
+
+<!-- (注)PerlMailerの著作権表示について
+	PerlMailerを使用するページには、下のリンクを必ず記述して下さい。このリ
+	ンクを表示しなかったり、改ざんしたりして使用することは禁止します。
+-->
+
+<div align="right"><b><a href="http://www.din.or.jp/~hideyuki/home/" target="_top" style="font-size:10pt">PerlMailer Ver.3.01</a></b></div>
+		</td></tr></table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6" bgcolor="yellow"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="icon" type="image/png" href="images/logoicon.png" title="NPOJIP" />
+<link rel="stylesheet" type="text/css" href="css/tip.css" media="all" />
+<script type="text/javascript" src="java/menu.js"></script>
+<!-- 作成日 2019/11/21 00:00:00 -->
+<title>薬のチェックTIP</title>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+	<div id="header1">
+		<a href="index.html" target="_top">
+			<img src="images/animenpojip.gif" width="93"  height="20" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" /><br />
+			<img src="images/npojiplogo4.jpg" width="93" height="93" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" />
+		</a> 
+	</div>
+	<div id="header2">
+		<img src="images/chk_tip_title.gif" width="700" height="100" border="0" 
+			alt="医薬ビジランスセンター(NPOJIP)へようこそ" /> 
+	</div>
+	<div class="menu">
+		<div id="menu1" onmouseover="MenuOn(1)" onmouseout="MenuOff(1)">
+		<a href="chk_tip.html#" class="menuhead">薬のチェック</a>
+			<div class="submenu" id="submenu1">
+				<a href="chk_tip.html">購読のしかた</a>
+				<a href="chk_tip_index.html">バックナンバー</a>
+				<a href="cgi-bin/pwmgr/index.html">パスワード管理</a>
+			</div>
+		</div>
+		<div id="menu2" onmouseover="MenuOn(2)" onmouseout="MenuOff(2)">
+		<a href="contents/sokuho/1.html" class="menuhead">速報版</a>
+		</div>
+		<div id="menu3" onmouseover="MenuOn(3)" onmouseout="MenuOff(3)">
+		<a href="chk_tip.html#" class="menuhead">書籍案内</a>
+			<div class="submenu" id="submenu3">
+				<a href="contents/book/1.html">薬のチェックは命のチェック</a>
+				<a href="contents/book/2.html">NPOJIP発行書籍</a>
+				<a href="contents/book/3.html">書評コーナー</a>
+			</div>
+		</div>
+		<div id="menu4" onmouseover="MenuOn(4)" onmouseout="MenuOff(4)">
+		<a href="chk_tip.html#" class="menuhead">疑問や感想など</a>
+			<div class="submenu" id="submenu4">
+				<a href="applicationforms/kanso1.html">疑問や質問</a>
+				<a href="applicationforms/kanso2.html">感想や意見</a>
+			</div>
+		</div>
+		<div id="menu5" onmouseover="MenuOn(5)" onmouseout="MenuOff(5)">
+				<a href="contents/link/1.html" class="menuhead">リンク</a>
+		</div>
+	</div><!-- end of menu  -->
+</div><!-- header -->
+<!-- ここまでコピー（メニューとヘダー） -->
+<div id="contents">
+<a name="koudoku"></a>
+<h1>購読のしかた</h1>
+
+<h2>申し込みの前にお読みください</h2>
+<h3>「薬のチェック」誌は、印刷物媒体ですが、電子版も読むことができます</h3>
+<p>パソコンを使う環境にない方や、印刷物のほうが使いやすい、親しみがあるという方は、印刷物媒体をお読みください。</p>
+<p>「電子版を参照」という文言がある場合、各自のIDコードとパスワードで電子版をお読みくださいますよう、お願いいたします。電子版には、紙面の都合で収載しきれなかった参考文献やグラフ・表、専門的な情報などをアップしています。</p>
+<h3>申込みは、個人名でお願いいたします</h3>
+<p>団体・会社などの場合は、氏名欄にはパスワード管理者としてどなたか個人名のご記入をお願いします。</p>
+
+<h3>購読料</h3>
+	<p>購読料（年度は、該当年の１月発行号～１１月号まで）　<br />★印刷物媒体（電子版付き）：年間６０００円（消費税、送料込み）<br />
+	　　　<br />
+	入金を確認後、電子版を読むための「ＩＤコード」と「パスワード」を郵送にてお送りいたします。</p>
+<h3>支払い方法</h3>
+<p>購読料の支払いは、郵便振替または三井住友銀行、三菱UFJ銀行への振込からお選びいただけます。金融機関の情報は、注文フォームにあります。</p>
+<h2>新規購読の申込みは<a href="https://npojip.org/applicationforms/chk_tip_mousikomi.html"><strong>こちら</strong></a></h2>
+<h2>電子版PDFに関して</h2>
+<p>最新号の目次と概略案内は以下をご覧ください。</p>
+
+<a name="No86"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No86.pdf"><img src="images/kikanshi/No86.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.86" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No86（2019年11月）記事目次　　　<span class="fig"><a href="chk_tip/No86-f04.pdf"><b>主な記事要旨・文献</b><strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　　　　　　<a href="chk_tip/No86-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editorial</strong>　　<space class="fig"><b>だまされることの罪</b></space>　　　　　　　　　　<a href="chk_tip/86-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　インスリンデグルデク（商品名：トレシーパ）　　　　　　<a href="chk_tip/No86-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b><br /><br />
+	　　　　基礎分泌ィンスリンの補充用に必要　　　　　　　　　<a href="chk_tip/No86-f05.pdf">Web表<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>総説</strong></p>
+	<p class="fig"><b>　　　・診療ガイドラインと利益相反</b></p>
+	<p class="fig"><b>　　　・企業が出資する研究は出版物？それとも広告？</b></p>
+	<p class="fig"><b>　　　治療ガイドライン批判シリーズ（11-続編）</b></p>
+	<p class="fig"><b>　　　　英国（NICE）の基準は「160/100以上で治療　　　　<a href="chk_tip/No86-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+
+
+<p class="bd"><strong>害反応 </strong></p>
+	<p class="fig"><b>　　 ・抗インフルエンザ剤ゾフルーザの害：耐性・肺炎・突然死・出血　<a href="chk_tip/No86-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　 ・抗精神病剤：神経毒であり脳を萎縮させる　　　　　　　　　　　<a href="chk_tip/No86-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　 ・鉄剤の誤嚥による気管支の壊死　　　　　　　　　　　　　　　　<a href="chk_tip/No86-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　医師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　コーヒー無礼区</b></p>
+	<p class="fig"><b>　　医師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　患者用くすりの説明書　インスリン デグルデク</b></p>
+	<p class="fig"><b>　　医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　みんなのやさしい生命倫理 86 </b>　「生老病死」（56）</p>
+
+<p class="bd"><strong>Others</strong></p>
+	<p class="fig"><b>　　ISDB　総会報告</b></p>
+
+<p class="bd"><strong>FORUM</strong></p>
+	<p class="fig">　　「アスピリンとPPI併用と認知機能低下について」の記事を読んで </p>
+	<p class="fig">　　ISDB総会に参加して </p>
+	<p class="fig">　　書評：『新型タバコの本当のリスク』</p>
+<p class="bd"><strong>次号予告／編集後記<br />
+
+<small>　　表紙のことば：</small></strong><span class="fig">晩秋に燃えるような紅色に染まる蔦は、蔦紅葉（つたもみじ）とも呼ばれ秋の季語になっています。</span></p>
+
+
+<a name="No85"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No85.pdf"><img src="images/kikanshi/No85.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.85" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No85（2019年9月）記事目次　　　<span class="fig"><a href="chk_tip/No85-f04.pdf"><b>主な記事要旨・文献</b><strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd"><a href="chk_tip/No85-f07.pdf">No.85の用語索引</a></p>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　　　　　　<a href="chk_tip/No85-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editorial</strong>　　<space class="fig"><b>高血圧ガイドライン：作成委員自体に問題あり</b></space>　<a href="chk_tip/85-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　成人慢性便秘症用剤 ラグノスNF経口ゼリー　　　　<a href="chk_tip/No85-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b><br /><br />　　　　新たに適応を得たが、症例によっては有用　　　</p>
+	<p class="fig"><b>　　C型肝炎用薬剤：薬価を下げるときだ!!　　</b></p>
+
+<p class="bd"><strong>総説：</strong>ガイドライン批判シリーズ（11）</p>
+	<p class="fig"><b>　　高血圧ガイドライン2019の科学的根拠は希薄　　　　<a href="chk_tip/No85-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　　<a href="chk_tip/No85-f01.pdf">Web資料1：SPRINT試験のデータの矛盾、Wei論文のデータの偏り<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　　<a href="chk_tip/No85-f02.pdf">Web資料2：降圧剤使用の有無と予後への影響　　　　　 <strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　　<a href="chk_tip/No85-f03.pdf">Web資料3：高血圧GL2019が根拠にした19論文リスト　　<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>Adverse Reactions </strong></p>
+	<p class="fig"><b>　　低用量ピルの害：うつ病と自殺　　　　<a href="chk_tip/No85-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　ACE阻害剤は肺がんを増やすか？　　　<a href="chk_tip/No85-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　・コーヒー無礼区</b></p>
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　・医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　・患者用くすりの説明書　低用量ピル<br />
+　　　　　避   妊：アンジュ、トリキュラー<br />
+　　　　　月経困難症：ジェミーナ配合剤</b></p>
+	
+	<p class="fig"><b>　　・みんなのやさしい生命倫理 85 </b>　「生老病死」（55）</p>
+
+<p class="bd"><strong>その他</strong></p>
+
+	<p class="fig"><b>　　・FORUM</b></p>
+	<p class="fig">　　老健施設入居者の骨粗しょう症にどう対処すればよいのか？ </p>
+	<p class="fig">　　アスピリンとPPI併用と認知機能低下 </p>
+
+<p class="bd"><strong>次号予告／編集後記<br />
+	<small>　　表紙のことば：</small></strong><span class="fig">秋のお彼岸頃に咲く白花曼珠沙華。静かな佇まいの中にも、華やかさを感じさせます。</span></p>
+
+
+<a name="No84"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No84.pdf"><img src="images/kikanshi/No84.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.84" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No84（2019年7月）記事目次　　　<span class="fig"><a href="chk_tip/No84-f04.pdf"><b>主な記事要旨・文献</b><strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd"><a href="chk_tip/No84-f07.pdf">No.84の用語索引</a></p>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　　　　　　<a href="chk_tip/No84-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editorial</strong>　　<space class="fig"><b>厚生労働省は科学的精神を無視するのか？</b></space>　<a href="chk_tip/84-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　慢性便秘用剤モビコール配合剤　　　　　　　　<a href="chk_tip/No84-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b><br /><br />　　　　酸化マグネシウムに代わり第一選択に　　　<a href="chk_tip/No84-f05.pdf">Web資料１<strong><i> Free</i></strong></a></p>
+	<p class="fig"><b>　　カナキヌマブ（商品名イラリス）と周期性発熱症候群　　<a href="chk_tip/No84-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b>
+	<br /><br />　　　　症状に対する効果はあるが、長期の評価は不明</p>
+
+<p class="bd"><strong>Adverse Reactions </strong></p>
+	<p class="fig"><b>　　抗前立腺肥大症に対する5α還元酵素阻害剤　　　　　<a href="chk_tip/No84-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b><br /><br />　　　　糖尿病のリスクが増える</p>
+	<p class="fig"><b>　　デノスマブ：中止後に中止後に多発性脊椎骨折        　　　<a href="chk_tip/No84-f04.pdf"><b>まとめ・文献</b><strong><i> Free</i></strong></a></b><br /><br />　　　　害が益を上回る、使わない</p>
+
+<p class="bd"><strong>総説：</strong>ガイドライン批判シリーズ（10）</p>
+	<p class="fig"><b>　　低用量ピル(OC・ⅬEP）ガイドライン批判　　　　<a href="chk_tip/No84-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+	<p class="fig">　　　　高リスク者では37人に1人が血栓塞栓症に<a href="chk_tip/No84-f06.pdf">　　　Web資料２<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　・医師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　・医師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　・コーヒー無礼区</b></p>
+	<p class="fig"><b>　　・医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　・患者用くすりの説明書</b>　C型慢性便秘用緩下剤（モビコール配合剤）</p>
+	<p class="fig"><b>　　・みんなのやさしい生命倫理 84 </b>　「生老病死」（54）</p>
+
+<p class="bd"><strong>その他</strong></p>
+
+	<p class="fig"><b>　　・FORUM</b></p>
+	<p class="fig">　　青竹踏みが夜間頻尿をよくするって本当？    </p>
+	<p class="fig">　　降SGLT-2阻害剤を再検討してほしい </p>
+
+<p class="bd"><strong>次号予告／編集後記<br />
+	<small>　　表紙のことば：</small></strong><span class="fig">紅白の対比が鮮やかな源平葛。源平合戦の戦いの象徴であった紅と白が、その名の由来です。</span></p>
+	
+<a name="No83"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No83.pdf"><img src="images/kikanshi/No83.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.83" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No83（2019年5月）記事目次　　　<span class="fig"><a href="chk_tip/No83-f04.pdf"><b>主な記事要旨・文献</b><strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd"><a href="chk_tip/No83-f07.pdf">No.83の用語索引</a></p>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　<a href="chk_tip/No83-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editoria</strong>　　<space class="fig"><b>害を無視した早期承認は犯罪だ</b></space>　<a href="chk_tip/83-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　C型肝炎用の新直接作用型抗ウイルス剤（商品名エプクルーサ）<a href="chk_tip/No83-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b><br /><br />　　　　前治療無効例や非代償性肝硬変の治療に進展あり</p>
+	<p class="fig"><b>　　ペムブロリズマブ（商品名キイトルーダ）　　　　　　　　　　<a href="chk_tip/No83-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b>
+	<br /><br />　　　　局所進行性または転移性の尿路上皮がんに限定使用</p>
+
+<p class="bd"><strong>Adverse Reactions </strong></p>
+	<p class="fig"><b>　　抗インフルエンザ剤ゾフルーザによる出血　　<a href="chk_tip/No83-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　骨粗しょう症治療のデノスマブによる免疫不全        <a href="chk_tip/No83-f04.pdf"><b>まとめ・文献</b><strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>総説：</strong>ガイドライン批判シリーズ（10）</p>
+	<p class="fig"><b>　　夜間頻尿診療ガイドラインの批判と提言　　　　<a href="chk_tip/No83-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+	<p class="fig">　　　　薬物療法ではよくならない</p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　・痛風性関節炎の治療奮闘記　その②　    浜六郎        <a href="chk_tip/No83-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　・医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　・患者用くすりの説明書</b>　C型肝炎用剤</p>
+	<p class="fig"><b>　　・みんなのやさしい生命倫理 83 </b>　「生老病死」（53）</p>
+
+<p class="bd"><strong>その他</strong></p>
+
+	<p class="fig"><b>　　・FORUM</b></p>
+	<p class="fig">　　Q:マイスリーについて二説あるのは、なぜ  <b><a href="chk_tip/No83-f05.pdf">Web資料<strong><i> Free</i></strong></a></b><</p>
+	<p class="fig">　　Q:降圧剤ディオバンのデータねつ造について</p>
+
+<p class="bd"><strong>次号予告／編集後記<br />
+	<small>　　表紙のことば：</small></strong><span class="fig">さわやかな風が吹きわたる五月、新緑は輝き、木々は生命力にあふれています。</span></p>
+	
+<a name="No82"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No82.pdf"><img src="images/kikanshi/No82.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.82" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No82（2019年3月）記事目次　　　<span class="fig"><a href="chk_tip/No82-f04.pdf"><b>主な記事要旨・文献</b><strong><i> Free</i></strong></span></a></h2>
+<p class="bd"><a href="chk_tip/No82-f07.pdf">No.82の用語索引</a></p>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　<a href="chk_tip/No82-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editoria</strong>　　<space class="fig"><b>患者を薬好きにしたのはだれ？</b></space>　<a href="chk_tip/82-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　オピオイド過量における経鼻ナロキソン</b><br /><br />
+　　　　　オピオイド拮抗剤：救命に有用かつ使いやすい　　　　<b><a href="chk_tip/No82-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a>　<a href="chk_tip/No82-f05.pdf">Web資料<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>Adverse Reactions </strong></p>
+	<p class="fig"><b>　　・低カリウム血症を起こす薬剤</b>　漢方薬や市販の薬剤も要注意　　　　　　<b><a href="chk_tip/No82-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　・抗ヒスタミン剤デスロラタジン、ロラタジン</b>　異常行動やQT 延長が起こる　<a href="chk_tip/No82-f04.pdf"><b>まとめ・文献</b><strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>総説：</strong>ガイドライン批判シリーズ（９）</p>
+	<p class="fig"><b>　　認知症疾患診療ガイドラインは薬物偏重　　　　<a href="chk_tip/No82-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a>　<a href="chk_tip/No82-f05.pdf">Web資料<strong><i> Free</i></strong></a></b></p>
+	<p class="fig">　　　　認知症に薬剤は不要、接し方を工夫し、治さなくてよい</p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　・医師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　・医師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　・医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　・患者用くすりの説明書</b>　尿アルカリ化剤</p>
+	<p class="fig"><b>　　・みんなのやさしい生命倫理 82 </b>　「生老病死」（52）</p>
+
+<p class="bd"><strong>その他</strong></p>
+
+	<p class="fig"><b>　　・痛風性関節炎の治療奮闘記 その①　<a href="chk_tip/No82-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a>　<a href="chk_tip/No82-f05.pdf">Web資料<strong><i> Free</i></strong></a></p>
+	<p class="fig"><b>　　・FORUM</b>　高尿酸血症や痛風の治療について<br /><br />
+	　　　　　　　　薬剤の併用を主治医にやめてもらうには？</p>
+
+<p class="bd"><strong>次号予告／編集後記<br />
+	<small>　　表紙のことば：</small></strong><span class="fig">春の妖精が舞い降りたかのような優しいピンク色の桃の花が、本格的な春の到来を告げていました。</span></p>
+	
+	
+<a name="No81"></a>
+<a href="https://npojip.org/member/kusurinocheck/Vol19-No81.pdf"><img src="images/kikanshi/No81.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.81" /></a>
+<br />
+<h4>←←←　PDF版へはタイトル画像をクリックしてください。</h4>
+<br clear="all" />
+<h2>薬のチェック　No81（2019年1月）記事目次　　　<span class="fig"><a href="chk_tip/No81-f04.pdf">主な記事要旨・文献<strong><i> Free</i></strong></span></a></h2>
+<p class="bd"><a href="chk_tip/No81-f06.pdf">No.81の用語索引</a></p>
+
+<p class="bd"><strong>目次／編集部から</strong>　　　　　　　　　　　　　　　　<a href="chk_tip/No81-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editoria</strong>　　<space class="fig"><b>科学不正の放置を懸念する－ディオバン判決</b></space>　<a href="chk_tip/81-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig"><b>　　・偽膜性腸炎用剤 フィダキソマイシン：</b><br />
+　　　　　　安全・有効だが、軽々しく使わない　　　<b><a href="chk_tip/No81-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　・慢性便秘症用緩下剤 エロビキシバット：</b><br />
+　　　　　　判定保留、長期使用は問題　　　　　　　<b><a href="chk_tip/No81-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>Adverse Reactions </strong></p>
+	<p class="fig"><b>　　・血糖降下剤SGLT-2阻害剤による重篤な感染症　　<a href="chk_tip/No81-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　・抗菌剤スルファジアジン銀クリーム　　　　　　<a href="chk_tip/No81-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+
+<p class="bd"><strong>総説：</strong>ガイドライン批判シリーズ（８）</p>
+	<p class="fig"><b>　　・高尿酸血症・痛風治療ガイドライン　　　　　　<a href="chk_tip/No81-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig">　　　　無症状の高尿酸血症は薬物療法の対象にすべきでない、非薬物療法の徹底を</p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（問題）</p>
+	<p class="fig"><b>　　・薬剤師国家試験に挑戦しよう</b>（正解と解説）</p>
+	<p class="fig"><b>　　・コーヒー無礼区</b></p>
+	<p class="fig"><b>　　・医学研究の方法、基本の「き」</b>⑤バイアスと時間軸　　<b><a href="chk_tip/No81-f04.pdf">記事導入部・文献<strong><i> Free</i></strong></a></b></p>
+	<p class="fig"><b>　　・医薬品危険性情報あれこれ</b></p>
+	<p class="fig"><b>　　・患者用くすりの説明書</b>　緩下剤エロビキシバット</p>
+	<p class="fig"><b>　　・みんなのやさしい生命倫理 81 </b>　「生老病死」（51）</p>
+
+<p class="bd">FORUM</p>
+
+	<p class="fig">　　　医師は独自の治療をしてはいけないのか？</p>
+	<p class="fig">　　　疑義照会を拒む医師への対応は？</p>
+
+<p class="bd">次号予告／編集後記</p>
+	<p class="fig">　　　表紙のことば：冬空の下、白木蓮のつぼみが光を浴びて、春への期待いっぱいに膨らんでいました。</p>
+	
+	
+<a name="No80"></a>
+<img src="images/kikanshi/No80.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.80" />
+<br clear="all" />
+<h2>薬のチェックTIP　No80（2018年11月）記事目次　　　<span class="fig"><a href="chk_tip/No80-f04.pdf">主な記事要旨・文献<strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd"><strong>目次／編集部から</strong>　<a href="chk_tip/No80-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>Editoria</strong>　　<space class="fig">瀕死のコクランは蘇生できるか</space>　　　　　 <a href="chk_tip/80-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>New Products</strong></p>
+	<p class="fig">　　・帯状疱疹サブユニットワクチン　シングリックス　　　<a href="chk_tip/No80-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a><br />
+　　　　　　判定保留：効果はあるが、害判定に欠陥　　　　<a href="chk_tip/No80-f05.pdf">Web資料<strong><i> Free</i></strong></a></p>
+	<p class="fig">　　・新型インフルエンザ用剤　ゾフルーザ　　　　　　　　<a href="chk_tip/No80-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a><br />
+　　　　　　価値なし：タミフルと差なし、免疫ができにくくなる</p>
+
+<p class="bd"><strong>総説</strong></p>
+	<p class="fig">　　・治療ガイドライン批判シリーズ（6）<br />
+　　　糖尿病ガイドライン批判　　　　　　　<a href="chk_tip/No80-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+<p class="bd"><strong>害反応</strong><br />
+	<p class="fig">　　タミフルによる重症精神症状：新たな証拠　　　<a href="chk_tip/No80-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a><br />
+　　　　　重篤な異常行動・精神症状が29～35倍	<br />
+　　<b>HPVワクチンは死亡を増やす：</b>コクランデータで<br />
+　　<b>ミラベグロン：仏保健省が償還反対</b></p>
+
+<p class="bd"><strong>連載</strong></p>
+
+	<p class="fig">　　・医師国家試験に挑戦しよう（問題）<br />
+　　<b>・医学研究の方法、基本の「き」</b><br />
+　　　　　④研究の進め方、仮説から出版へ<br />
+　　・医薬品危険性情報あれこれ<br />
+　　・患者用薬の説明書　ゾフルーザ<br />
+　　・みんなのやさしい生命倫理 　80 「生老病死」（50）<br />
+　　・医師国家試験に挑戦しよう（正解と解説）</p>
+
+<p class="bd">その他</p>
+
+	<p class="fig">　　・News<br />
+　　　　<b>コクラン暴走：最大の功労者を除名<br />
+　　　　認知症用剤が保険対象外に：フランス</b></p>
+
+	<p class="fig">　　・FORUM<br />
+	　　　　心筋梗塞と主観<br />
+　　　　喘息にオマリズマブは？</p>
+	<p class="fig">　　次号予告／編集後記</p>
+	
+	
+
+
+<a name="No79"></a>
+<img src="images/kikanshi/No79.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.79" />
+<br clear="all" />
+<h2>薬のチェックTIP　No79（2018年9月）記事目次　　　<span class="fig"><a href="chk_tip/No79-f04.pdf">主な記事要旨・文献<strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd">目次／編集部から　<a href="chk_tip/No79-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd">Editorial</p>
+	<p class="fig">　　「悪魔の証明」はたやすい　　　　　　　      <a href="chk_tip/79-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　新コレステロール低下剤 PCSK9阻害剤：不要　　<a href="chk_tip/No79-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a><br />
+　　　　　長期試験で総死亡が増えている　　　　　　<a href="chk_tip/No79-f05.pdf">Web資料<strong><i> Free</i></strong></a></p>
+
+<p class="bd">総説</p>
+	<p class="fig">　　治療ガイドライン批判シリーズ（5）<br />
+　　喘息治療の基本とガイドライン批判　　<a href="chk_tip/No79-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+<p class="bd">害反応<br />
+	<p class="fig">　　尿酸降下剤 フェブキソスタット：使ってはいけない　<a href="chk_tip/No79-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+<p class="bd">連載</p>
+
+	<p class="fig">　　薬剤師国家試験に挑戦しよう（問題）</p>
+
+	<p class="fig">　　コーヒー無礼区</p>
+
+	<p class="fig">　　医学研究の方法、基本の「き」</p>
+
+	<p class="fig">　　　　③比較試験の差は因果関係を示す　　<a href="chk_tip/No79-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a>　　<a href="chk_tip/No79-f05.pdf">Web資料<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　医薬品危険性情報あれこれ　<a href="chk_tip/No79-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　患者用薬の説明書　尿酸低下剤（フェブキソスタット）</p>
+
+	<p class="fig">　　みんなのやさしい生命倫理 　第79回　生老病死（49）</p>
+
+	<p class="fig">　　薬剤師国家試験に挑戦しよう（正解と解説）</p>
+
+<p class="bd">その他</p>
+
+	<p class="fig">　　FORUM　　日本動脈血硬化学会のガイドラインについて</p>
+	
+	<p class="fig">　　次号予告／編集後記</p>
+
+<a name="No78"></a>
+<img src="images/kikanshi/No78.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.78" />
+<br clear="all" />
+<h2>薬のチェックTIP　No78（2018年7月）記事目次　　　<span class="fig"><a href="chk_tip/No78-f04.pdf">主な記事要旨・文献<strong><i> Free</i></strong></span></a></h2>
+
+<p class="bd">目次／編集部から　<a href="chk_tip/No78-f04.pdf">pdf<strong><i> Free</i></strong></a></p>
+
+<p class="bd">Editorial</p>
+	<p class="fig">　　抗がん剤――延命効果も評価も乏しい　　　　　      <a href="chk_tip/78-Editorial.pdf">pdf <strong><i> Free</i></strong></a></p>
+
+<p class="bd">総説</p>
+	<p class="fig">　　治療ガイドライン批判シリーズ（4）<br />
+　　動脈硬化学会GL＝コレステロールガイドライン　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a>　<a href="chk_tip/No78-f05.pdf">Web資料-1<strong><i> Free</i></strong></a></p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　コレステロール低下剤：ロミタピドは毒性が強い　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a>　<a href="chk_tip/No78-f05.pdf">Web資料-1<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　がんの疼痛治療：ヒドロモルフォン</p>
+
+	<p class="fig">　　（解説）がんの成人患者に対する鎮痛療法の基本　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　　　　患者用くすりの説明書番外編<br />
+　　　　　　がんの痛み治療で医師が陥りやすい間違い・やってはならないこと　<a href="chk_tip/No78-f06.pdf">Web資料-2<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　　　　患者用くすりの説明書「モルヒネ」　<a href="chk_tip/No78-f07.pdf">Web資料-3<strong><i> Free</i></strong></a></p>
+
+<p class="bd">害反応<br />
+	<p class="fig">　　スタチン剤の典型的な６つの害　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+<p class="bd">連載</p>
+
+	<p class="fig">　　医師国家試験に挑戦しよう（問題）</p>
+
+	<p class="fig">　　患者用薬の説明書　スタチン剤（コレステロール低下剤）</p>
+
+	<p class="fig">　　コーヒー無礼区</p>
+
+	<p class="fig">　　医学研究の方法、基本の「き」</p>
+
+	<p class="fig">　　　　②因果関係を直接には経験できない　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　医薬品危険性情報あれこれ　<a href="chk_tip/No78-f04.pdf">まとめ・文献<strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　医師国家試験に挑戦しよう（正解と解説）</p>
+
+	<p class="fig">　　みんなのやさしい生命倫理 　第78回　生老病死（48）</p>
+
+<p class="bd">その他</p>
+
+	<p class="fig">　　FORUM　スボレキサントなど新たな睡眠剤について</p>
+	
+	<p class="fig">　　書評　近代日本一五〇年　<a href="chk_tip/No78-f04.pdf"><strong><i> Free</i></strong></a></p>
+
+	<p class="fig">　　次号予告</p>
+	
+	<p class="fig">　　編集後記　<a href="chk_tip/No78-f04.pdf"><strong><i> Free</i></strong></a></p>
+	
+
+
+<a name="No77"></a>
+<img src="images/kikanshi/No77.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.77" />
+<br clear="all" />
+<h2>薬のチェックTIP　No77（2018年5月）記事目次　　　<span class="fig"><a href="chk_tip/No77-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">目次／編集部から（<a href="chk_tip/No77-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial</p>
+	<p class="fig">　　　　薬剤性肺炎の疫学研究から見えてきたこと      （<a href="chk_tip/77-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　グアンファシン（商品名インチュニブ）と注意欠如多動性障害　<a href="chk_tip/No77-f04.pdf">まとめ・文献 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">薬剤師国家試験に挑戦しよう（問題）</p>
+
+<p class="bd">新連載・医学研究の方法、基本の「き」</p>
+	<p class="fig">　　二度あることは三度ある　<a href="chk_tip/No77-f04.pdf">導入と目次 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">総説</p>
+	<p class="fig">　　高血圧ガイドラインは病気づくりのガイドライン　<a href="chk_tip/No77-f04.pdf">まとめ・文献</a><strong><i>Free</i></strong>　<a href="chk_tip/No77-f05.pdf">Web資料 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">害反応<br />
+	<p class="fig">　　ベンゾジアゼピン剤による肺炎<a href="chk_tip/No77-f04.pdf">　まとめ・文献</a><strong><i>Free</i></strong>　<a href="chk_tip/No77-f06.pdf">Web資料 pdf</a><strong><i>Free</i></strong><br />
+	<p class="fig">　　バレニクリン（商品名チャンピックス）と精神障害<a href="chk_tip/No77-f04.pdf">　まとめ・文献</a><strong><i>Free</i></strong><br />
+	<p class="fig">　　鈴木論文はHPV ワクチンの害を示す　（<a href="chk_tip/No77-f07.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+	<p class="fig">　　リチウムの薬物相互作用、医薬品有害反応報告データベース、<br />
+　　【フィンゴリモドで血小板減少、塩化ラジウムで死亡が増える</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第77回　生老病死（47）</p>
+	<p="fig">　　代理懐胎（出産）のさらなる問題について</p>
+
+<p class="bd">FORUM</p>
+	<p class="fig">　　HPVワクチンを巡る村中璃子医師の主張について<br />
+　　「タミフルのインフルエンザ予防に対する効果について<br />
+　　コレステロール低下剤をやめたが、脳梗塞の不安がある</p>
+
+<p class="bd">薬剤師国家試験に挑戦しよう（解答と解説）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No76"></a>
+<img src="images/kikanshi/No76.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.76" />
+<br clear="all" />
+<h2>薬のチェックTIP　No76（2018年3月）記事目次　　　<span class="fig"><a href="chk_tip/No76-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">ハイライト（<a href="chk_tip/No76-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial</p>
+	<p class="fig">　　「試用する権利」は「患者の権利」か？      （<a href="chk_tip/76-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">総説</p>
+	<p class="fig">　　総合健診は有効か？　　<a href="chk_tip/No76-f04.pdf">まとめ・文献</a><strong><i>Free</i></strong></p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　バレニクリン（商品名：チャンピックス）　<a href="chk_tip/No76-f04.pdf">まとめ・文献 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">医師国家試験に挑戦しよう（問題）</p>
+
+<p class="bd">患者用薬の説明書</p>
+	<p class="fig">　　バレニクリン-</p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　睡眠時無呼吸症候群にモダフィニルは使ってはいけない）　<a href="chk_tip/No76-f04.pdf">まとめ・文献 pdf</a><strong><i>Free</i></strong>-</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+	<p class="fig">　【WHO】デスロラタジン、ロラタジンと小児の体重増加<br />
+　【WHO】プレガバリン（リリカ）と色覚障害<br />
+　【WHO】SGLT2阻害剤と陰部そう痒症<br />
+　【カナダHealth Canada】フィナステリド:重篤な筋関連のリスク</p>
+
+<p class="bd">害反応<br />
+	<p class="fig">　　降圧剤アリスキレン（商品名ラジレス）　<a href="chk_tip/No76-f04.pdf">まとめ・文献 pdf</a><strong><i>Free</i></strong>-</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第76回　生老病死（46）</p>
+	<p="fig">　　代理懐胎（出産）について</p>
+
+<p class="bd">FORUM</p>
+	<p class="fig">　　75号ワクチンの図はおかしいのでは？<br />
+　　「がん検出　有効性不明」という新聞記事を読んで</p>
+
+<p class="bd">医師国家試験に挑戦しよう（解答）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No75"></a>
+<img src="images/kikanshi/No75.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.75" />
+<br clear="all" />
+<h2>薬のチェックTIP　No75（2018年1月）記事目次　　　<span class="fig"><a href="chk_tip/No75-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">ハイライト（<a href="chk_tip/No75-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial</p>
+	<p class="fig">　　ガイドラインはだれのため？      （<a href="chk_tip/75-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products</p>
+	<p class="fig">　　睡眠剤ラメルテオン（商品名ロゼレム）<br />
+　　　頭痛やうつ病、免疫抑制、発がん性あり　<a href="chk_tip/No75-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No75-f06.pdf">Web資料 pdf</a><strong><i>Free</i></strong>
+		<a href="chk_tip/No75-f07.pdf">正誤表あり pdf</a><strong><i>Free</i></strong><br />
+　　乳児のHIV 治療に有益　ラルテグラビル　<a href="chk_tip/No75-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">薬剤師国家試験に挑戦しよう（問題）</p>
+
+<p class="bd">総説</p>
+	<p class="fig">　　日本のインフルエンザ治療は間違っている　　<a href="chk_tip/No75-f05.pdf">pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">害反応<br />
+	<p class="fig">　　タミフル服用後は、異常行動が16 倍に<br />
+　　抗うつ剤：精神疾患のない成人における自殺と暴力<br />
+　　抗うつ剤使用後の性機能障害<br />
+　　鼻や咽頭のうっ血に使う薬剤による心房細動</p>
+
+<p class="bd">薬剤師国家試験に挑戦しよう（解答）</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+	<p class="fig">　【英MHRA】抗がん剤 PD-1 阻害剤（ニボルマブなど）：臓器移植拒絶反応の報告<br />
+　【EMA】乳糖含有メチルプレドニゾロン注射用製剤：牛乳タンパクアレルギー患者で禁忌に<br />
+　【英MHRA】セレキシパグ：CYP2C8 の強力な阻害剤との併用は今後禁忌に<br />
+　【NZ MEDSAFE】高齢患者の副作用報告</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第75回　生老病死（45）</p>
+	<p="fig">　　生殖補助医療について</p>
+
+<p class="bd">FORUM</p>
+	<p class="fig">　　Ｑ：健康な高齢者に関する健診の統計は？<br />
+　　Ｑ：74 号「医師国家試験問題に挑戦しよう！」解説は疑問</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No74"></a>
+<img src="images/kikanshi/No74.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.74" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No74（2017年11月）記事目次　　　<span class="fig"><a href="chk_tip/No74-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+<p class="bd">今号のハイライト（<a href="chk_tip/No74-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　高齢者よ！　薬を捨てよう       </span>（<a href="chk_tip/74-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　睡眠剤スボレキサント（商品名ベルソムラ）　<br />
+　　　ナルコレプシーを起こす物質　これは薬なのだろうか?　　<a href="chk_tip/No74-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No74-f05.pdf">Web資料  pdf</a><strong><i>Free</i></strong></span><br />
+	<span class="fig">　　骨粗しょう症:テリパラチド注（商品名フォルテオ、テリボン）　<br />
+　　　害のほうが大きい、推奨しない　　　<a href="chk_tip/No74-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No74-f05.pdf">Web資料  pdf</a><strong><i>Free</i></strong></span>
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">総説<br />
+	<span class="fig">　　PPI で肺炎は増えなかったとする論文の問題点　　　　　<a href="chk_tip/No74-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong><br />
+	　　糖尿病に使う薬剤を評価する　　　<a href="chk_tip/No74-f04.pdf">要旨・文献 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No74-f05.pdf">Web資料  pdf</a><strong><i>Free</i></strong><br />
+	　　　　　　2016 年脂質栄養学会シンポジウムで発表した　<a href="chk_tip/No74-f06.pdf">スライド pdf</a><strong><i>Free</i></strong></span>
+</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　ステロイド剤の短期使用による小児への害<br />
+	　　胎児も非ステロイド抗炎症剤に晒されている<br />
+	　　過活動膀胱の治療剤ミラベグロンによる心房細動</span>
+</p>
+
+<p class="bd">医師国家試験に挑戦しよう（解答）</p>
+
+<p class="bd">医薬品危険性情報あれこれ<br />
+	<span class="fig">　　・デノスマブ：外耳道骨壊死の報告<br />
+	　　・型糖尿病に使うDPP-4 阻害剤：関節痛のリスク<br />
+	　　・カナグリフロジン（SGLT-2阻害剤）：下肢切断のリスク上昇<br />
+	　　・レボチロキシンとパニック発作</span>
+</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第74回　生老病死（44）</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　レボチロキシンとパニック発作<br />
+	　　PPI の評価は矛盾しているのでは？<br />
+	　　検査値改善で「健康になった」といえるか？</span>
+</p>
+
+<p class="bd">書評「あなたの体は9 割が細菌」</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No73"></a>
+<img src="images/kikanshi/No73.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.73" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No73（2017年9月）記事目次　　　<span class="fig"><a href="chk_tip/No73-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+<p class="bd">今号のハイライト（<a href="chk_tip/No73-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　WHO はコクランレビューに従いタミフルを格下げ       </span>（<a href="chk_tip/73-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　糖尿病性の神経障害性疼痛に<br />
+	　　　　　　　デュロキセチン（商品名サインバルタ）は不要　</span><a href="chk_tip/No73-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No73-f05.pdf">Web資料  pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　糖尿病の３大合併症の一つ、神経障害性疼痛について　　</span><a href="chk_tip/No73-f06.pdf">Web資料 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　糖尿病性の神経障害性疼痛にカプサイシン（唐辛子成分：貼付剤）は有効か　</span><a href="chk_tip/No73-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">薬剤師国家試験（問題）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　四種混合ワクチン（DTP-IPV）　　　　</span><a href="chk_tip/No73-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No73-f07.pdf">Web資料  pdf</a><strong><i>Free</i></strong><br />
+<span class="fig">　　不眠と最適な睡眠時間、睡眠剤の害　　</span><a href="chk_tip/No73-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　プロトンポンプ阻害剤（PPI）による肺炎　　</span><a href="chk_tip/No73-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第73回　生老病死（43）</p>
+
+<p class="bd">FORUM<br />
+	　　<span class="fig">複数のワクチンの同時接種で部位を離すのは、なぜ？</span><br />
+	　　<span class="fig">子宮頸がん死亡率推移のグラフの見方に疑問</span><br />
+	　　<span class="fig">医薬品売上高の調べ方を教えてください</span>
+</p>
+
+<p class="bd">薬剤師国家試験（解答）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No72"></a>
+<img src="images/kikanshi/No72.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.72" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No72（2017年7月）記事目次　　　<span class="fig"><a href="chk_tip/No72-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+<p class="bd">印刷版のための正誤表があります(Web版は訂正済み）(<span class="fig"><a href="chk_tip/No72-f06.pdf">正誤表と補足（改訂版）</a><strong><i>Free</i></strong></span>)</p>
+<p class="bd">今号のハイライト（<a href="chk_tip/No72-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　その治療・予防　本当に必要？ 疫学調査の重要性       </span>（<a href="chk_tip/72-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　骨粗しょう症に使うデノスマブ（商品名プラリア）　　</span><a href="chk_tip/No72-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　ドライアイにシクロスポリン点眼　　　　　　　　　　</span><a href="chk_tip/No72-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　小児への肺炎球菌ワクチン、Hib（ヒブ）ワクチンは？　　</span><a href="chk_tip/No72-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No72-f05.pdf">Web資料  pdf</a><strong><i>Free</i></strong><br /></p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　腱損傷を起こす薬剤　　</span><a href="chk_tip/No72-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第72回　生老病死（42）</p>
+
+<p class="bd">FORUM<br />
+	　　<span class="fig">Ｑ：中学生の予防的ピロリ菌除菌の根拠は？</span><br />
+	　　<span class="fig">編集部の補足と読者へのお願い　</span><br />
+</p>
+
+<p class="bd">医師国家試験（解答）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No71"></a>
+<img src="images/kikanshi/No71.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.71" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No71（2017年5月）記事目次　　　<span class="fig"><a href="chk_tip/No71-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+<p class="bd">今号のハイライト（<a href="chk_tip/No71-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　司法に医学的判断を任せて いいものか？       </span>（<a href="chk_tip/71-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　早期発見乳がんの標準治療は どうするか？　　　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+<span class="fig">　　子宮頸がん死亡はスクリーニングでは減らない　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>　<a href="chk_tip/No71-f05.pdf">Web資料 表と図
+ pdf</a><strong><i>Free</i></strong><br /></p>
+
+<p class="bd">薬剤師国家試験（問題）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　帯状疱疹ワクチンの効果と害は？　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　便秘用薬剤リナクロチド（商品名リンゼス）　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　特発性肺線維症にニンテダニブ（商品名オフェブ）　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">薬剤師国家試験（解答）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　プソイドエフェドリンで虚血性大腸炎　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　C 型肝炎用剤ソホスブビルで肺動脈性肺高血圧症　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　抗がん剤ベバシズマブで声帯が壊死　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　オピオイドで副腎機能の低下　　</span><a href="chk_tip/No71-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第71回　生老病死（41）</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">FORUM<br />
+	　　<span class="fig">Ｑ：「人年」の概念と本文記述とが合わないのでは？</span><br />
+	　　<span class="fig">書評：「つくられた恐怖の点滴殺人事件」</span><br />
+	　　<span class="fig">小児への肺炎球菌ワクチン、Hib（ヒブ）ワクチンは？</span><br />
+</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No70"></a>
+<img src="images/kikanshi/No70.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.70" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No70（2017年3月）記事目次　　　<span class="fig"><a href="chk_tip/No70-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+<p class="bd">今号のハイライト（<a href="chk_tip/No70-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　最適使用とは何か――医学的根拠をもっと厳密に       </span>（<a href="chk_tip/70-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　肺炎球菌結合型ワクチン　　</span><a href="chk_tip/No70-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br /></p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　抗PD-1 抗体:ペムブロリズマブ(商品名キイトルーダ)　</span><a href="chk_tip/No70-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　イダルシズマブ(商品名プリズバインド)　　　　　　　</span><a href="chk_tip/No70-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　吐き気止めのドンペリドンとメトクロプラミド　　</span><a href="chk_tip/No70-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+</p>
+
+<p class="bd">医師国家試験（解答）</p>
+
+<p class="bd">話題<br />
+<span class="fig">　　コウノメソッドの評価について</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第70回　生老病死（40）</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　アリセプトは認知症に有効ではないのか？　　</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No69"></a>
+<img src="images/kikanshi/No69.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.69" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No69（2017年1月）記事目次　　　<span class="fig"><a href="chk_tip/No69-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">今号のハイライト（<a href="chk_tip/No69-f04.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　悪夢から目覚める時――「コレステロール= 魔物」仮説       </span>（<a href="chk_tip/69-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　予防接種、打つ、打たない、どうする？　　</span><a href="chk_tip/No69-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br /></p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　新コレステロール低下剤(PCSK9 阻害剤) 　</span><a href="chk_tip/No69-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　糖尿病用剤デュラグルチド(GLP-1作動剤) 　</span><a href="chk_tip/No69-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">話題<br />
+<span class="fig">　　5か月連続で最もよく読まれた論文、ほか</p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　NSAIDs やステロイド剤による虚血性大腸炎、大腸穿孔　　</span><a href="chk_tip/No69-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　フィナステリド、カナグリフロジン　　</span>
+</p>
+
+<p class="bd">薬剤師国家試験（問題）</p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　⑨「かゆみがあるとき」　　</span></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第69回　生老病死（39）</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　「しないでよい定期予防接種は？」……その後の検討　　<span><br />
+	　　Q &A 副作用について十分な説明がほしい</span></p>
+
+<p class="bd">薬剤師国家試験（解答）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No68"></a>
+<img src="images/kikanshi/No68.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.68" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No68（2016年11月）記事目次　　　<span class="fig"><a href="chk_tip/No68-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　医薬ビジランスシンポジウムを終えて       </span>（<a href="chk_tip/68-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　経口血糖降下剤リラグルチド（商品名ビクトーザ）　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　新規抗がん剤ニボルマブ（商品名オプジーボ）　　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">医薬品危険性情報あれこれ　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　錐体外路症状-カタトニア-悪性症候群は一連の病態　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　認知症に運動療法は治療にも予防にも有効　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong><br />
+　　再び、経口血糖降下剤SGLT-2阻害剤：遮蔽不全の影響　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　⑧おなかが痛いとき（後編）　　</span><a href="chk_tip/No68-f04.pdf">要旨 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第68回　生老病死（38）</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　医薬ビジランス・シンポジウム報告　　<span><a href="chk_tip/No68-f05.pdf">pdf</a><strong><i>Free</i></strong><br />
+	　　受けなくてもよい定期予防接種は？</span></p>
+
+<p class="bd">医師国家試験（解答）</p>
+
+<p class="bd">編集後記</p>
+
+<a name="No67"></a>
+<img src="images/kikanshi/No67.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.67" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No67（2016年9月）記事目次　　　<span class="fig"><a href="chk_tip/No67-yoshi.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　「糖尿病用薬剤の評価方法は、なぜ「甘い」   </span>（<a href="chk_tip/67-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　アカンプロサート（商品名レグテクト）　　</span><a href="chk_tip/No67-yoshi.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">薬剤師国家試験（問題）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　ベバシズマブには致死的な害が多い　　</span><a href="chk_tip/No67-yoshi.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　GLP-1 作動剤（リラグルチド）　</span><a href="chk_tip/No67-yoshi.pdf">要旨 Web資料 pdf</a><strong><i>Free</i></strong><br />
+　　　--糖尿病の予後改善証拠なし、推奨しない<br />
+<span class="fig">　　アルコール依存症：離脱後、いかにして断酒を維持するか　　</span><a href="chk_tip/No67-yoshi.pdf">要旨 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　⑦おなかが痛いとき（前編）　         </span><a href="chk_tip/No67-yoshi.pdf">要旨 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">医薬品危険性情報あれこれ</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第67回　生老病死（37）</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　ISDB臨時総会の報告<br />
+	　　家族性高コレステロール血症の方への対応について<br />
+	　　抗生物質と抗菌剤と、違い（差）はあるのか？</span></p>
+
+<p class="bd">編集後記</p>
+
+<a name="No66"></a>
+<img src="images/kikanshi/No66.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.66" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No66（2016年7月）記事目次　　　<span class="fig"><a href="chk_tip/No66-f04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　「新薬」マブに、マドわされない         　　</span>（<a href="chk_tip/66-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　新規抗がん剤ニボルマブ（商品名オプジーボ）　　　</span><a href="chk_tip/No66-f04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong>
+												　</span><a href="chk_tip/No66-f06.pdf">Web資料 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　新生血管を伴う強度近視におけるラニビズマブ　　　</span><a href="chk_tip/No66-f04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　転移性乳がんへのベバシズマブ
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　妊娠前３か月におけるトリメトプリムと奇形
+</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　タミフルの害反応に関する英語論文の出版と、裁判　</span><a href="chk_tip/No66-f05.pdf">pdf</a><strong><i>Free</i></strong>
+</p>
+<p class="bd">　　　突発型害反応の機序　原論文：　<a href="http://onlinelibrary.wiley.com/doi/10.1111/ane.12629/full">HTML</a>　<a href="http://onlinelibrary.wiley.com/doi/10.1111/ane.12629/pdf">PDF</a><br />
+	　　　　遅発型害反応の機序　原論文：　<a href="http://www.ncbi.nlm.nih.gov/pubmed/27251370">PubMed</a>　<a href="chk_tip/No66-f09.pdf">PDF</a><br />
+	　　　　<a href="sokuho/160701.html">速報版 No.170</a>（タミフルの害反応に関する総説英語論文2編出版）
+</p>
+
+<span class="fig">　　マンモグラフィーによる乳がんスクリーニング  Part 2, Part 3
+</p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　⑥頭痛とくすり         </span><a href="chk_tip/No66-f04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第66回　生老病死（36）</p>
+
+<p class="bd">新コーナー・医薬品危険性情報あれこれ<br />
+		　　プソイドエフェドリンと虚血性大腸炎、フルオロキノロン剤と網膜剥離、DPP-4剤と心不全
+</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　医薬ビジランスシンポジウム開催のお知らせ<br />
+	　　医師国家試験（解答と解説）<br />
+	　　Q＆A　病者除外バイアスの計算方法に疑問</span></p>
+
+<p class="bd">編集後記</p>
+
+
+<a name="No65"></a>
+<img src="images/kikanshi/No65.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.65" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No65（2016年5月）記事目次　　　<span class="fig"><a href="chk_tip/No65-file04.pdf">主な記事要旨・文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　巧妙なデータ操作に細心の注意を     　　</span>（<a href="chk_tip/65-Editorial.pdf">pdf</a><strong><i>Free</i></strong>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　ベバシズマブ（商品名アバスチン）　　　　　　　　</span><a href="chk_tip/No65-file04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　認知症用剤のドネペジルとガランタミンの長期試験　</span><a href="chk_tip/No65-file04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　HPVワクチン被害と「病者除外バイアス」　   </span><a href="chk_tip/No65-file05.pdf">pdf</a><strong><i>Free</i></strong><a href="chk_tip/No65-file06.pdf">　Web資料
+ pdf</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　ワクチンの害評価の観察研究で、病者除外バイアスがいかに大きいか、理論と実際面から詳しく解説しています。<br />　　特に重要な情報ですので、フリーアクセスとします。</span><br />
+	<span class="fig">　　<a href="chk_tip/No65-file09.pdf">本誌No57の記事（2015年1月号）</a>もフリーアクセスとしました。</span><br />
+	<span class="fig">　　<a href="chk_tip/No65-file10.pdf">性の健康財団市民講座における講演記録(2015年6月)</a>も合わせてご覧ください。</span><br />
+	<span class="fig">　　ニコランジルによる潰瘍多発の規模と機序　　　</span><a href="chk_tip/No65-file04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong>
+</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　オセルタミビル（タミフル）の効力と害：最新情報　</span><a href="chk_tip/No65-file07.pdf">pdf</a><strong><i>Free</i></strong><a href="chk_tip/No65-file08.pdf">　Web資料
+ pdf</a><strong><i>Free</i></strong><br />
+<span class="fig">　　EU（E-CDC)の専門家による意見書（案）に対するコクランチームによる批判的意見を翻訳・要約し紹介。<br />
+		　　現在のタミフルの効力と害に関する最新情報です（フリーアクセス）。<br />　　Web資料（Free）は、その原文（英文）です。<br />
+		　　<a href="contents/link/tip-free/2014/2014_12.pdf">オセルタミビル（タミフル）の害とその機序（TIP誌2014年12月号）</a>もフリーアクセスです。<br />
+		　　合わせてご覧ください。</span>
+</p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　⑤鼻水・鼻づまりのくすり      </span><a href="chk_tip/No65-file04.pdf">要旨と文献 pdf</a><strong><i>Free</i></strong></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第65回　生老病死（35）　<a href="chk_tip/No65-file04.pdf">冒頭文</a><strong><i>Free</i></strong></p>
+
+<p class="bd">新コーナー・医薬品危険性情報あれこれ　<a href="chk_tip/No65-file04.pdf">冒頭文</a><strong><i>Free</i></strong></p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　海外情報：診療指針に反するがん検診<br />
+	　　医師国家試験（解答）<br />
+	　　Ｑ＆Ａ：手の震えはミカムロの害反応？</span></p>
+
+<p class="bd">編集後記</p>
+
+
+<a name="No64"></a>
+<img src="images/kikanshi/No64.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.64" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No64（2016年3月）記事目次<br />
+	　　　<span class="fig"><a href="chk_tip/No64-04.pdf">主な記事要旨・参考文献</a><strong><i>Free</i></strong></span></h2>
+
+<p class="bd">デュタステリド　<span class="fig">（商品名ザガーロ） 男性型脱毛症にわずかな効果、重大な害</span><br />
+	　溶連菌感染症の予防　<span class="fig">常在菌の除菌　是か非か？</span><br />
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　Talk about harm, not risk 　―リスクでなく、害について議論しよう　　（<a href="chk_tip/64-Editorial.pdf">pdf</a><strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　男性型脱毛症：デュタステリド（商品名ザガーロ）　　</span><br />
+	　　　<a href="chk_tip/No64-04.pdf">要旨と文献 PDF</a><strong><i>Free</i></strong></span>
+	　　<a href="https://npojip.org/member/kusurinocheck/No64-05.pdf">Web資料(図表註) PDF</a></span>
+	　　<a href="chk_tip/No64-06.pdf">関連TIP誌記事 PDF</a><strong><i>Free</i></strong></span><br />
+	<span class="fig">　　小児急性リンパ性白血病にイマチニブ（商品名グリベック）</span></p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　アルツハイマー病のくすりによる徐脈   </span><a href="chk_tip/No64-04.pdf">要旨と文献 PDF</a><strong><i>Free</i></strong><br />
+<span class="fig">　　尿失禁を引き起こす薬剤    </span><a href="chk_tip/No64-04.pdf">要旨と文献 PDF</a><strong><i>Free</i></strong><br /></p>
+
+<p class="bd">薬剤師国家試験（問題）</p>
+
+<p class="bd">総説<br />
+<span class="fig">　　溶連菌感染予防に抗生物質－是か非か？      </span><a href="chk_tip/No64-04.pdf">要旨と文献 PDF</a><strong><i>Free</i></strong></p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　④咳に使うくすり     </span><a href="chk_tip/No64-04.pdf">要旨と文献 PDF</a><strong><i>Free</i></strong></p>
+
+
+
+<p class="bd">みんなのやさしい生命倫理 　第64回　生老病死（34）<a href="chk_tip/No64-04.pdf">冒頭文</a><strong><i>Free</i></strong></p>
+
+<p class="bd">FORUM　<a href="chk_tip/No64-04.pdf">冒頭文</a><strong><i>Free</i></strong><br />
+	<span class="fig">　　リツキシマブの妊婦への使用について（63号）<br />
+	　　アルツハイマー病の治療薬剤格下げを読んで（63号） <br />
+	　　健診で尿酸値が高いから服薬をと言われているが（61号）</span></p>
+
+<p class="bd">書評（民を殺す国・日本　足尾鉱害事件からフクシマへ）</p>
+
+<p class="bd">編集後記</p>
+
+
+
+<a name="No63"></a>
+<img src="images/kikanshi/No63.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.63" />
+
+<br clear="all" />
+<h2>薬のチェックTIP　No63（2016年1月）記事目次<br />
+	　　　<span class="fig"><a href="chk_tip/No63-01.pdf">主な記事要旨・参考文献とWeb資料</a>　<strong><i>Free</i></strong></span></h2>
+
+	<p class="bd"><a href="chk_tip/No63-seigohyo-3.pdf">正誤表</a></p>
+
+<p class="bd">メマンチン　<span class="fig">（商品名メマリー） 認知症に無用</span><br />
+	　アクトスで膀胱がん　<span class="fig">糖尿病は改善せず、がんは増える</span><br />
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　疫学研究者、統計学者よ、科学に正直であれ！　　（<a href="chk_tip/63-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　認知症用剤メマンチンは使うべきでない　</span><a href="chk_tip/No63-01.pdf">要旨とweb 資料</a>　<strong><i>Free</i></strong></span><br />
+	<span class="fig">　　アルツハイマー病の治療薬剤を格下げ（フランス）</span><br />
+	<span class="fig">　　重篤な多発性血管炎にリツキシマブは選択肢の１つ</span></p>
+
+<p class="bd">日常使う医薬品を検証する<br />
+	<span class="fig">　　③下痢に使うくすり</span></p>
+
+<p class="bd">医師国家試験（問題）</p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　アクトスの発がん性 </span>　<a href="chk_tip/No63-01.pdf">要旨とweb 資料</a>　<strong><i>Free</i></strong><br />
+<span class="fig">　　ミソプロストールに重篤な心血管イベントあり</span></p>
+
+<p class="bd">総説<br />
+<span class="fig">　　マンモグラフィーによる乳がんスクリーニングの是非</span></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第63回</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　フェブキソスタットと痛風発作について（61号）<br />
+	　　メトロニダゾールの有効性について（57、58号） <br />
+	　　ワルファリンとアピキサバンの比較数字は誤記？</span></p>
+
+<p class="bd">書評（教育という病）</p>
+
+<p class="bd">医師国家試験（解答）</p>
+
+<p class="bd">編集後記</p>
+
+
+<a name="No62"></a>
+<img src="images/kikanshi/No62.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.62" />
+<br clear="all" />
+
+<h2>薬のチェックTIP　No62（2015年11月）記事項目と概略案内</h2>
+
+<p class="bd">プロプラノロール　<span class="fig">重症の乳児血管腫に有効</span><br />
+	　抑肝散　　　　<span class="fig">認知症の周辺症状への効力は証明されていない </span><br />
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　伝えたいこと、伝わること（<a href="chk_tip/62-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　乳児の重症血管腫にプロプラノロール　　　　ステロイド剤に代わる第一選択に (未承認）<br />
+	　　認知症周辺症状への抑肝散　　</span><a href="chk_tip/No62-01.pdf">web 資料（図）</a>　<strong><i>Free</i></strong></span><br />
+	<span class="bd">　　二重遮蔽法で評価されなくてよいのか？</p>
+
+<p class="bd">患者用くすりの説明書 <br />
+	<span class="fig">　　フェブキソスタット（フェブリク）</span><br />
+<span class="fig">　　レジパスビル・ソホスブビル配合剤（ハーボニー）</span></p>
+
+<p class="bd">害反応<br />
+	<span class="fig">　　HPVワクチンを打った後の難病</span><br />
+<span class="fig">　　　3回接種後、劇症型筋委縮性側索硬化症（ALS）発症し1年後に死亡（15歳）</span><br />
+<span class="fig">　　　因果関係なしとしてよいか？                                <a href="chk_tip/No62-02.pdf">web 資料：</a><strong><i>Free</i></strong></span><br />
+<span class="fig">　　同じ薬剤の同じ害反応で再入院　（Prescrire誌より、日本の症例も紹介）</span></p>
+
+<p class="bd">新連載:日常使う医薬品を検証する<br />
+<span class="fig">　　 ②解熱剤と鎮痛剤：アセトアミノフェン、イブプロフェン、ナプロキセン　<a href="chk_tip/No62-03.pdf">web 資料：</a><strong><i>Free</i></strong></span></p>
+
+<p class="bd">医師国家試験問題</p>
+
+<p class="bd">みんなのやさしい生命倫理 　第62回</p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　ガチフロ点眼剤も回収すべきでは？<br />
+	　　生命倫理 （61）を読んで  <br />
+	　　59号「あなたならどれを検査しますか？」の解説 </span></p>
+
+<a name="No61"></a>
+<img src="images/kikanshi/No61.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.61" />
+<br clear="all" />
+<h2>薬のチェックTIP　No61（2015年9月）記事項目と概略案内</h2>
+
+<p class="bd">抗HCV剤(L/S配合剤ハーボニー）　<span class="fig">使用期間は8週でよい</span><br />
+	　ワルファリン　　　　　　　　　　<span class="fig">至適PT-INR は1.5～2.2</span><br />
+	　フェブキソスタット　　　　　　　<span class="fig">アロプリノールより劣る</span></p>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　代理エンドポイントでも画期的？（<a href="chk_tip/61-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　LDV/SOF 配合抗HCV 剤（商品名ハーボニー）（<a href="chk_tip/No61-shiryo.pdf">資料：表1-2</a>　<strong><i>Free</i></strong>）<br />
+	　　フェブキソスタット（商品名フェブリク） </span><br />
+	<span class="bd">　　59号の訂正記事（ダビガトラン）（<a href="chk_tip/No61-teisei.pdf">資料：図２、表３、表４</a>　<strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">総説<br />
+	<span class="fig">　　ワルファリン治療における至適PT-INR 値（<a href="chk_tip/No61-shiryo.pdf">資料：図２、表３、表４</a>　<strong><i>Free</i></strong></span>）</p>
+
+<p class="bd">新連載<br />
+	<span class="fig">　　日常使う医薬品を検証する</span></p>
+
+<p class="bd">医師国家試験問題</p>
+
+<p class="bd">海外情報<br />	
+	<span class="fig">　　医薬品情報誌における利益相反とは？ </span></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第61回<br />
+	<span class="fig">　　生老病死31 </span></p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　タミフルの処方に薬局はどう対応するか？ <br />
+	　　Ｃ型肝炎治療用の薬、本当に「画期的」？ <br />
+	　　C.difficile 保菌児がなかなか減らないのはなぜ？</span></p>
+
+<a name="No60"></a>
+<img src="images/kikanshi/No60.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.60" />
+<br clear="all" />
+<h2>薬のチェックTIP　No60（2015年7月）記事項目と概略案内</h2>
+
+<p class="bd">Editorial<br />
+	<span class="fig">　　ISDB:パンプローナから陽は昇るか　<a href="chk_tip/60-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></span></p>
+
+<p class="bd">New Products<br />
+	<span class="fig">　　ソホスブビル（商品名ソバルディ）　ジェノタイプ<sub><small>2</small></sub>に　画期的か<br />
+	　　エドキサバン、リバーロキサバン、アピキサバン　ダビガトランより安全？　背景は？　脱落は？</span><br />
+	<span class="bd">　　図2に訂正があります　<a href="chk_tip/No60-fig2-teiseiban.pdf">pdf</a>　<strong><i>Free</i></strong></span></p>
+
+<p class="bd">医師国家試験問題　正答率6.7％</p>
+
+<p class="bd">総説<br />
+	<span class="fig">　　脳梗塞にアルテプラーゼは有用か？　　　発症後3-4.5 時間、1.5～3時間の使用は？</span></p>
+
+<p class="bd">害反応 <br />
+	<span class="fig">　　ピボキシル基含有抗生剤（フロモックス、メイアクト、トミロンなど）による低血糖　乳幼児には特に危険<br />
+	　　グラスチム剤と致命的な毛細血管漏出症候群<br />
+	　　プラミペキソールによる心不全</span></p>
+
+<p class="bd">みんなのやさしい生命倫理 　第60回</p>
+
+<p class="bd">海外情報<br />	
+	<span class="fig">　　「不眠に対して睡眠剤をすぐには処方しないこと」など5項目<br />
+	　　ISDB General Assembly 2015</span></p>
+
+<p class="bd">FORUM<br />
+	<span class="fig">　　MERS（マーズ）：正しく恐れるべし<br />
+	　　書評：九州大学生体解剖事件<br />
+	　　あなたなら、どれを検査しますか？</span></p>
+
+<p class="bd">編集後記</p>
+
+<a name="No59"></a>
+<img src="images/kikanshi/No59.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.59" />
+<br clear="all" />
+<h2>薬のチェックTIP　No59（2015年5月）記事項目と概略案内</h2>
+
+<p class="bd">Editorial: よい薬よ  登場してほしい！　<a href="chk_tip/59-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></p>
+
+<p class="bd">New Products<br />
+	・　ダビガトラン（商品名プラザキサ）<br />
+		<span class="fig">　RE-LY試験の脱落は主アウトカムの10倍　信頼性は？</span><br />
+		<span class="fig">　aPTTはダビガトラン血中濃度を反映（相関係数：r<sup>2</sup>=0.99）</span><br />
+		<span class="bd">　Web資料が多数あります　<a href="chk_tip/No59-siryo.pdf">pdf</a>　<strong><i>Free</i></strong></span><br /><br />
+		<span class="bd">・　ルビプロストン（商品名アミティーザ）</span><br />
+		<span class="fig">　プロスタグランジン作用は？　塩素チャネルは身体の他の部分にもあるが・・・。<br />
+									　呼吸困難やめまい、流産が起きても便秘解消の方が大事か・・・。</span><br />
+		<span class="bd">　P56(表1),57(表2)の鮮明版はこちら　<a href="chk_tip/No59-teisei.pdf">pdf</a>　<strong><i>Free</i></strong></span></p>
+
+<p class="bd">医師国家試験問題</p>
+
+<p class="bd">患者用くすりの説明書：<span class="fig">ダビガトラン（抗凝固剤）、ルビプロストン（便秘用剤）</span></p>
+
+<p class="bd">Review:総説<br />
+		　日本老年医学会：高齢者の安全な薬物療法ガイドライン2015案への提言・意見<br />
+	　　（薬のチェックは命のチェックの<a href="sokuho/150518.html">速報版No169</a>をご覧ください）<br /><br />
+	<span class="fig">・　脂質異常に関する提言：スタチンはストップに</span><br />
+	<span class="bd">　全文と文献はこちら　<a href="http://jsln.umin.jp/pdf/guideline/comment20150427.pdf">pdf</a>　<strong><i>Free</i></strong></span><br /><br />
+	<span class="fig">・　スタチン以外：糖尿病用剤や降圧剤に苦言あり、インスリンをストップにしないで</span><br />
+	<span class="bd">　全文と文献はこちら　<a href="sokuho/No169-1.pdf">pdf</a>　<strong><i>Free</i></strong></span><br />
+	<span class="bd">　p63文献番号訂正版はこちら　<a href="chk_tip/No59-teisei.pdf">pdf</a>　<strong><i>Free</i></strong></span></p>
+
+<p class="bd">Adverse reactions:害反応 <br />
+	<span class="fig">・　東京女子医大：プロポフォール死亡事故：禁忌の本当の理由は？<br />
+								　</span><span class="bd">ミトコンドリア毒</span><span class="fig">のためか、超短時間GABA剤としての</span>
+								<span class="bd">禁断症状のためか</span>。 <br />
+								<span class="fig">・　ラモトリギンによる中毒性表皮壊死症(TEN)-SJS：使い方だけの問題か？<br />
+							　ラモトリギンの</span><span class="bd">半減期がながければ</span><span class="fig">中止しても軽快は困難</span>
+							　<span class="bd">パルス</span><span class="fig">は有効/安全？<br />
+						・　TENと関連症候群：スペインの市販後調査レビュー</span></p>
+
+<p class="bd">みんなのやさしい生命倫理59</p>
+
+<p class="bd">海外情報<br />	
+<span class="fig">・　欧州の医薬品監視：前進した半面、製薬企業への外注が増加</span></p>
+	
+<p class="bd">FORUM<br />	
+<span class="fig">・　脂質異常症と頚動脈血栓へのスタチン剤使用について</span></p>
+<p class="bd">編集後記</p>
+
+
+<a name="No58"></a>
+<img src="images/kikanshi/No58.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.58" />
+<br clear="all" />
+<h2>薬のチェックTIP　No58（2015年3月）記事項目と概略案内</h2>
+
+<p class="bd">
+Editorial: 本当に有用な薬剤を求めて　<a href="chk_tip/58-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></p>
+
+		<span class="fig">　降圧剤や糖尿病用剤、コレステロール低下剤など慢性疾患に用いる薬剤は、寿命を延長して初めて価値がある。
+	こう考え、長期のランダム化比較試験（RCT）が、1960年代から1970年代の初期には実施された。<a href="chk_tip/58-Editorial.pdf">続きはこちら</a></span><br />
+
+<p class="bd">New Products<br />
+	・　メサドン塩酸塩（メサペイン）限定使用：<br />
+		<span class="fig">　状況により有用　くれぐれも慎重に用量調節を
+		メサドンは、オピオイドμ受容体作動剤だが、なぜオピオイドローテーションに有効か？
+		がんの疼痛管理に必須薬剤だが、不適切な使用で死亡例も。なぜ死亡するのか？</span><br />
+		<span class="bd">・　カバジタキセル（ジェブタナ）</span><br />
+		<span class="fig">　多数が死亡。死亡につながる発熱性好中球減少症は承認前に見られた？</span><br />
+		<span class="bd">・　SGLT-2阻害剤（臨床試験の検討）</span><br />
+		<span class="fig">　SGLT-2阻害剤で死亡は17人に。専門家が懸念した害は審査段階で懸念されていたか？</span></p>
+
+<p class="bd">患者用くすりの説明書<br />
+	・　番外編：オピオイド使用の原則：<br />
+		<span class="fig">　がんの痛み治療で医師が陥りやすい間違い、やってはならないこと（患者が医師を選ぶ目安にもなる）</span><br />
+		<span class="bd">・　例：徐放剤で開始してはいけない。では何を使う？<br />
+		・　モルヒネ(即効剤)：<span class="fig">必須薬剤（モルヒネ即効剤）の説明書</span></p>
+	
+<p class="bd">総　説<br />
+		・　H.ピロリ除菌で寿命短縮の可能性<br />
+	<span class="fig">　C. difficile：生後1年以内に全員感染。その後減少。ピロリ除菌でCdifficile感染は？なぜ？　プロトンポンプは胃壁細胞だけにしかないのか？　他の病気が増加することは？　ピロリ除菌はどうすべき？</span></p>
+
+<p class="bd">薬剤師国家試験問題</p>
+<p class="bd">害反応<br />
+・　メトロニダゾールによる中枢・末梢神経障害<br />
+<span class="fig">　用量依存性？　機序は？　どの程度で起きる？　可逆的？　死亡例は？　起こさないための注意は？</span></p>
+<p class="bd">海外情報<br />	
+	・　スタチン剤勧告を３分の２の医師が拒否：英国<br />
+	・　タミフル「有効」との最新結果は企業援助のバイアス大<br />
+	<span class="fig">　2014年4月のコクラン研究報告の結論「合併症を予防しない」が適切</span></p>
+<p class="bd">みんなのやさしい生命倫理58</p>
+<p class="bd">FORUM<br />	
+	・　インフルエンザ、タミフルについてQ&A <br />
+	・　検討薬剤を募集します！<br />
+・　みんなのやさしい生命倫理５７を読んで</p>
+<p class="bd">編集後記</p>
+
+
+<a name="No57"></a>
+<img src="images/kikanshi/No57.jpg" align="left" width="500" border="0" alt="薬のチェックTIP No.57" />
+<br clear="all" />
+
+<h2>薬のチェックTIP　No57（2015年1月）記事項目と概略案内</h2>
+
+<p class="bd">
+Editorial: 独立医薬品情報誌の役割り　<a href="chk_tip/No15-Editorial.pdf">pdf</a>　<strong><i>Free</i></strong></p>
+
+<p class="bd">New Products:<br />
+		・　SGLT-2阻害剤　薬剤に値しない欠陥物質：<br />
+		<span class="fig">　このような毒物が、なぜ「くすり」なのか<br />
+	　販売1か月後という短期間で、糖尿病専門家が2度にわたり警告をしたという、いわくつきの物質。
+		警告は「懸念された副作用が現実のものになった」ため。市販前からどのようなことが、懸念されていたのだろうか？</span><br />
+	<span class="bd">・　メトロニダゾール：経口剤と静注用剤：</span><br />
+	<span class="fig">　有用だが神経障害に要注意<br />　穿孔性腹膜炎など重篤な嫌気性菌感染症に必要な静注用製剤がようやく承認された。
+	しかし、ピロリ菌除菌などありふれた病態に多用することで、耐性が生じ連用され、神経障害が生じる危険性がある。</span></p>
+
+<p class="bd">患者用くすりの説明書<br />
+	・　インスリン：必須<br />
+	・　SGLT-2阻害剤：危険・不要</p>
+
+<p class="bd">害反応：<br />
+		<span class="fig">ピル: 肺血栓塞栓症予防に非特異症状重視を　<br />
+	　低用量ピルによる肺血栓塞栓症の害は確立している。高血圧や喫煙、頭痛などがあれば起きやすい。単なる「不安・うつ」「血圧上昇」などありふれた症状が、肺血栓塞栓症の初期症状のことがある。医師・薬剤師、服用者本人も見逃さないようにしなければいけない。</span></p>
+	
+<p class="bd">総　説：<br />
+		・　高齢の糖尿病患者：<br />
+		<span class="fig">　HbA1c目標値は8.5％程度に：高齢者でなくとも、糖尿病学会ガイドライン通りでは死亡率が高くなる。まして、高齢者では緩やかなほうがよい。</span><br />	
+		<span class="bd">・　HPVワクチンの害に関する疫学調査について：</span><br />
+	<span class="fig">　HPVワクチン（いわゆる「子宮頸がん予防ワクチン）接種後には、神経や自己免疫疾患の専門家が「こんな病気これまでに見たことがない」
+	という難病が多発している。最新情報では、	半年で54人に１人の割合というとんでもない頻度で重篤な反応が報告されている。
+	厚労省が安全の根拠としている海外の疫学調査は欠陥調査のため根拠にならない。</span></p>
+
+<h5>医師国家試験に挑戦しよう！<br />
+	みんなのやさしい生命倫理（第57回）　生老病死(27)<br />
+	Forum: 映画（A2-B-C）、書評（くすりの害にあうということ）</h5>
+
+<h4>PDF版へは各号のタイトル画像をクリックするか「<a href="chk_tip_index.html">バックナンバー</a>」ページをご覧ください。<br />
+	購読申込みがまだの方は、<a href="chk_tip.html#koudoku">このページの最初</a>からご覧ください。</h4>
+</div><!-- contents -->
+<!-- ここからコピー -->
+	<div id="footer">
+	<p>&copy;2014-2019　by　NPOJIP　All　Rights　Reserved.</p>
+	</div><!-- footer -->
+</div><!-- wrapper -->
+<!-- ここまでコピー -->
+</body>
+</html>
+<!-- ここまでコピー -->

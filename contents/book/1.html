@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="icon" type="image/png" href="../../images/logoicon.png" title="NPOJIP" />
+<link rel="stylesheet" type="text/css" href="../../css/design.css" media="all" />
+<script type="text/javascript" src="../../java/menu.js"></script>
+<!-- 作成日 2019/01/08  00:00:00 -->
+<title>薬のチェックは命のチェック</title>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+	<div id="header1">
+		<a href="../../index.html" target="_top">
+			<img src="../../images/animenpojip.gif" width="93"  height="20" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare"  /><br />
+			<img src="../../images/npojiplogo4.jpg" width="93" height="93" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" />
+		</a> 
+	</div>
+	<div id="header2">
+		<img src="../../images/npojip_title.gif" width="700" height="100" border="0" 
+			alt="医薬ビジランスセンター(NPOJIP)へようこそ" /> 
+	</div>
+		<div class="menu">
+			<div id="menu1" onmouseover="MenuOn(1)" onmouseout="MenuOff(1)">
+			<a href="1.html#" class="menuhead">NPOJIPについて</a>
+				<div class="submenu" id="submenu1">
+					<a href="../dantai/1.html">設立の趣旨</a><span>|</span>
+					<a href="../dantai/2.html">理事長挨拶</a><span>|</span>
+					<a href="../dantai/3.html">所在地と連絡先</a><span>|</span>
+					<a href="../dantai/4.html">活動記録</a><span>|</span>
+					<a href="../dantai/5.html">会員について</a><span>|</span>
+					<a href="../dantai/6.html">お知らせ</a><span>|</span>
+					<a href="../dantai/7.html">著作権・著作</a>
+				</div>
+			</div>
+		<div id="menu2" onmouseover="MenuOn(2)" onmouseout="MenuOff(2)">
+		<a href="1.html#" class="menuhead">薬のチェック</a>
+			<div class="submenu" id="submenu2">
+				<a href="../../chk_tip.html">購読のしかた</a><span>|</span>
+				<a href="../../chk_tip_index.html">バックナンバー</a><span>|</span>
+				<a href="../../cgi-bin/pwmgr/index.html">パスワード管理</a><span>|</span>
+			</div>
+		</div>
+			<div id="menu3" onmouseover="MenuOn(3)" onmouseout="MenuOff(3)">
+				<a href="../sokuho/1.html" class="menuhead">速報版</a>
+			</div>
+			<div id="menu4" onmouseover="MenuOn(4)" onmouseout="MenuOff(4)">
+				<a href="1.html#" class="menuhead">書籍案内</a>
+					<div class="submenu" id="submenu4">
+						<a href="1.html">薬のチェックは命のチェック</a><span>|</span>
+						<a href="2.html">NPOJIP発行書籍</a><span>|</span>
+						<a href="3.html">書評コーナー</a>
+					</div>
+			</div>
+			<div id="menu5" onmouseover="MenuOn(5)" onmouseout="MenuOff(5)">
+				<a href="1.html#" class="menuhead">薬の情報</a>
+					<div class="submenu" id="submenu5">
+						<a href="../kusuri/1.html">解熱・鎮痛剤</a><span>|</span>
+						<a href="../kusuri/2.html">ステロイド</a><span>|</span>
+						<a href="../kusuri/3.html">抗がん剤・免疫抑制剤</a><span>|</span>
+						<a href="../kusuri/4.html">抗うつ剤・安定剤・睡眠剤</a><span>|</span>
+						<a href="../kusuri/5.html">その他</a>
+					</div>
+			</div>
+			<div id="menu6" onmouseover="MenuOn(6)" onmouseout="MenuOff(6)">
+				<a href="1.html#" class="menuhead">病気の情報</a>
+					<div class="submenu" id="submenu6">
+						<a href="../byouki/1.html">糖尿病</a><span>|</span>
+						<a href="../byouki/2.html">コレステロール・高脂血症</a><span>|</span>
+						<a href="../byouki/3.html">高血圧症</a><span>|</span>
+						<a href="../byouki/4.html">ぜん息・アレルギー</a><span>|</span>
+						<a href="../byouki/5.html">かぜ・インフルエンザ</a><span>|</span>
+						<a href="../byouki/6.html">その他</a>
+					</div>
+			</div>
+			<div id="menu7" onmouseover="MenuOn(7)" onmouseout="MenuOff(7)">
+				<a href="../faq/1.html" class="menuhead">よくある質問</a>
+			</div>
+		</div><!-- end of menu  -->
+</div><!-- header -->
+<!-- ここまでコピー（メニューとヘダー） -->
+<div id="contents">
+<h1>薬のチェックは命のチェック　バックナンバー一覧</h1>
+	<p>NPOJIPが編集・発行する医薬品情報誌（季刊誌：１月・４月・７月・１０月の年４回）です。
+		患者／市民だけでなく医療従事者にも十分に読みごたえのある情報を提供しています。
+		本誌を仲立ちにして、患者／市民と医療者とが同じ言葉で話し合い、
+		相互理解を深めることができれば非常にうれしいです。</p>
+	<p>各号の目次は<a href="1.html">「特集」別目次</a>、
+		そして連載記事別目次としての
+		<a href="1_1.html">「みんなのやさしい生命倫理」</a>、 
+		<a href="1_2.html">「EBM超入門」</a>、
+		<a href="1_3.html">「映画のなかのクスリ」</a>、 
+		<a href="1_4.html">「薬害の歴史」</a>の各目次になっています。</p>
+	<p>各1200円（定価）消費税は別途　　まとめて注文は
+		<a href="../../applicationforms/mousyikomi.htm" target="_blank">こちら</a><br /></p>
+	<p>当センター発行の書籍を常備している書店は<a href="1_5.html">こちら</a></p>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="mag056.html">No.56　リウマチとそのくすり</a>
+	<span class="hsub">　胃にやさしい痛み止めって本当？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第56号 リウマチとそのくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag055.html">No.55　眼の病気とくすり</a>
+	<span class="hsub">　健康診断の「基準値」が変わる？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第55号 眼の病気とくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag054.html">No.54　排尿のトラブルとくすり</a>
+	<span class="hsub">　HPVワクチン接種は中止を<I>！</I></span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第54号 排尿のトラブルとくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag053.html">No.53　ワクチンのこともっと知ろう！ パート２</a>
+	<span class="hsub">　B型肝炎、日本脳炎、ロタ・・・　添加物アジュバントって何？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第53号 ワクチンのこともっと知ろう！ パート２" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag052.html">No.52　ワクチンのこともっと知ろう！</a>
+	<span class="hsub">　HPVワクチンの効果と害について　データ操作とメーカーの犯罪</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第52号 ワクチンのこともっと知ろう！" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag051.html">No.51　うつとくすり</a>
+	<span class="hsub">　悲嘆に向精神薬を使わないで</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第51号 うつとくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag050.html">No.50　いわゆる「発達障害」</a>
+	<span class="hsub">　子どもに使う薬剤の効果と害</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第50号 いわゆる「発達障害」" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag049.html">No.49　不眠・不安・うつの薬</a>
+		<span class="hsub"><strong>（絶版）</strong>ベンゾジアゼピンの作用と害</span>
+	</td>
+	<td class="magorder">
+<strong>（絶版）</strong></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag048.html">No.48　コレステロール</a>
+	<span class="hsub">　大切なものー下げないで　「くすり」は、まったく不要</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第48号 コレステロール" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag047.html">No.47　くすりの値段と価値パート２</a>
+	<span class="hsub">　役に立つのか、医薬分業</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第47号 くすりの値段と価値パート２" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag046.html">No.46　くすりの値段と価値パート１</a>
+	<span class="hsub">　国際比較――日本の薬は高い</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第46号 くすりの値段と価値パート１" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag045.html">No.45　糖尿病パート２</a>
+	<span class="hsub">　学会基準では命がちぢまる</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第45号 糖尿病パート２" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag044.html">No.44　糖尿病パート１</a>
+	<span class="hsub">　何をたべたらいいの？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第44号 糖尿病パート１" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag043.html">No.43　ヒブ・肺炎球菌ワクチン</a>
+	<span class="hsub">　打つ？打たない？どうしよう？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第43号 ヒブ・肺炎球菌ワクチン" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag042.html">No.42　抗生物質パート２</a>
+	<span class="hsub">　使い方と害作用</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第42号 抗生物質パート2" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag041.html">No.41　抗生物質パート１</a>
+	<span class="hsub">　耐性菌との闘いを終わらせよう</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第41号 抗生物質パート１" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag040.html">No.40　パーキンソン病とくすり</a>
+	<span class="hsub">　日本感染症学会のウソ　LDLコレステロール高めでも大丈夫</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第40号 パーキンソン病とくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag039.html">No.39　高血圧とくすりパート2</a>
+	<span class="hsub">　血圧を下げる薬　その正体は？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第39号 高血圧とくすりパート2" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag038.html">No.38　高血圧とくすりパート１</a>
+	<span class="hsub"><strong>（お問い合わせください）</strong>[第2特集]　子どものアトピーにステロイドはいらない</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第38号 高血圧とくすりパート１" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag037.html">No.37　皮膚とくすり／インフルエンザ</a>
+	<span class="hsub"><strong>（お問い合わせください）</strong>皮膚が年をとるということは</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第37号 皮膚とくすり／インフルエンザ" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag036.html">No.36　インフルエンザは かぜ！</a>
+	<span class="hsub">　ワクチンもタミフルもいらない</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第36号 インフルエンザは かぜ！" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag035.html">No.35　豚？新型？インフルエンザの正体、BCGと結核</a>
+	<span class="hsub">　赤ちゃんに1回接種の効果と害は？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第35号 豚？新型？インフルエンザの正体、BCGと結核" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag034.html">No.34　はしか・風疹ワクチン</a>
+	<span class="hsub">　接種後はじっくり観察しよう！</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第34号 はしか・風疹ワクチン" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag033.html">No.33　禁煙とくすり</a>
+	<span class="hsub">　ああ、タバコ、タバコ、タバコ…今からでも遅くない禁煙</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第33号 禁煙とくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag032.html">No.32　頭痛とくすり</a>
+	<span class="hsub">　薬なしで過ごしたいーその方法は？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第32号 頭痛とくすり" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag031.html">No.31　アトピー性皮膚炎</a>
+	<span class="hsub"><strong>（絶版）</strong>治すコツ－薬の迷路から抜け出す方法</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag030.html">No.30　喘息</a>
+	<span class="hsub">　子どものヒューヒューは本当に「ぜんそく」？</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="「薬のチェックは命のチェック」 第30号 喘息" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag029.html">No.29　花粉症とアレルギー性鼻炎</a>
+	<span class="hsub"><strong>（絶版）</strong>誰か私のくしゃみを止めて！</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="mag028.html">No.28　骨粗しょう症</a>
+		<span class="hsub"><strong>（お問い合わせください）</strong>骨粗しょう症は減っている</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden" value="「薬のチェックは命のチェック」 第28号 骨粗しょう症" name="shouhinmei" />
+			<input type="hidden" value="1200" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+		</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag027.html">No.27　認知症とせん妄</a>
+		<span class="hsub"><strong>（お問い合わせください）</strong>アリセプトは効か不効か</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第27号 認知症とせん妄" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag026.html">No.26　脳卒中</a>
+		<span class="hsub">　新薬よりも治療の基本をしっかりと</span>
+	</td>
+	<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第26号 脳卒中" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag025.html">No.25　高血圧治療は薬にたよるな！</a>
+		<span class="hsub">　下げすぎはもっとこわい</span>
+		</td>
+		<td class="magorder">
+		<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第25号 高血圧治療は薬にたよるな！" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+	<a href="mag024.html">No.24　メタボリックシンドロームのまやかし</a>
+	<span class="hsub">　ちょと太めが長生き</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第24号 メタボリックシンドロームのまやかし" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag023.html">No.23　がんの痛みとモルヒネ</a>
+		<span class="hsub">　　がんの痛みは９割以上が治療可能</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第23号 がんの痛みとモルヒネ" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+	<a href="mag022.html">No.22　肺がん</a>
+	<span class="hsub">　　予防と治療、禁煙の効果とイレッサの害</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第22号 肺がん" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag021.html">No.21　大腸がん</a>
+		<span class="hsub">　　検診の効果と害、抗がん剤の評価</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第21号 大腸がん" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag020.html">No.20　前立腺がん</a>
+		<span class="hsub">　多くの男性は前立腺がんを持って他の病気で死ぬ</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第20号 前立腺がん" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag019.html">No.19　乳がん</a>
+		<span class="hsub">　予防と治療　抗がん剤の効き方と毒性・副作用</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第19号 乳がん" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag018.html">No.18　がん治療の壁</a>
+		<span class="hsub">　がんと免疫の密接な関係</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第18号 がん治療の壁" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+	</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag017.html">No.17　がんの予防</a>
+		<span class="hsub">　がん検診は予防になるか</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第17号 がんの予防" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag016.html">No.16　フッ素　益と害</a>
+		<span class="hsub">　フッ化物応用、洗口の疑問に応えて</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第16号 フッ素" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag015.html">No.15　胃腸薬</a>
+		<span class="hsub">　下痢と便秘、子どもの胃腸薬</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第15号 胃腸薬" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag014.html">No.14　胃薬</a>
+		<span class="hsub">　たかが胃薬とあなどるなかれ</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第14号 胃薬" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag013.html">No.13　不安　パニック障害　くすり</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>　「抗うつ剤」SSRIの害</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag012.html">No.12　かぜとインフルエンザ</a>
+		<span class="hsub">　かぜぐすりの副作用</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第12号 かぜとインフルエンザ（改訂増補版）" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag011.html">No.11　睡眠剤と安定剤</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>命を縮めるベンゾジアゼピン</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag010.html">No.10　ステロイド剤（パート２）</a>
+		<span class="hsub">　使いすぎて体ボロボロ</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第10号 ステロイド剤パート２" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag009.html">No.9　ステロイド剤</a>
+		<span class="hsub">　ステロイドの作用と副作用</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第9号 ステロイド剤" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag008.html">No.8　喘息と必須薬</a>
+		<span class="hsub">　喘息の必須薬と危険物質</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第8号 喘息と必須薬" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag007.html">No.7　必須薬</a>
+		<span class="hsub">　あなたの薬　ほんとに必要？大丈夫？？</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」 第7号 必須薬" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" />
+	</form>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag006.html">No.6　抗生物質　その２</a>
+		<span class="hsub"><strong>（絶版）</strong>頼れる抗生物質　だがその副作用は？</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag005.html">No.5　抗生物質</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>日本の抗生物質使用の問題点</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag004.html">No.4　肝炎とインターフェロン</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>インターフェロン療法の効果と害</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag003.html">No.3　高血圧</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>高血圧は薬で下げるな下がるまで待とう</span>
+	</td>
+	<td class="magorder">
+	<span class="hsub">25号、38号、39号も高血圧を特集しております。</span>
+		</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag002.html">No.2　コレステロール</a>
+		<span class="hsub">
+		<strong>（絶版）</strong>２２０～２８０の人が一番長生き</span>
+	</td>
+	<td class="magorder">
+		<strong>（絶版）</strong>
+	</td>
+</tr>
+<tr>
+	<td class="maglist">
+		<a href="mag001.html">No.1　糖尿病</a>
+		<span class="hsub">　糖尿病食は万人の健康食</span>
+	</td>
+	<td class="magorder">
+	<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+		<input type="hidden" value="「薬のチェックは命のチェック」第1号　糖尿病" name="shouhinmei" />
+		<input type="hidden" value="1200" name="kakaku" />
+		<input type="hidden" value="1" name="kazu" />
+		<input type="submit" value="書籍注文かごに入れる" name="submit" /> 
+	</form>
+	</td>
+</tr>
+</table>
+	</div><!-- contents -->
+<!-- ここからコピー -->
+	<div id="footer">
+	<p>&copy;2000-2015　by　NPOJIP　All　Rights　Reserved.</p>
+	</div><!-- footer -->
+</div><!-- wrapper -->
+<!-- ここまでコピー -->
+</body>
+</html>
+<!-- ここまでコピー -->
+
+

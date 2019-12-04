@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="icon" type="image/png" href="../../images/logoicon.png" title="NPOJIP" />
+<link rel="stylesheet" type="text/css" href="../../css/design.css" media="all" />
+<script type="text/javascript" src="../../java/menu.js"></script>
+<!-- 作成日 2014/12/28  00:00:00 -->
+<title>常備店リスト</title>	
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+	<div id="header1">
+		<a href="../../index.html" target="_top">
+			<img src="../../images/animenpojip.gif" width="93"  height="20" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" /><br />
+			<img src="../../images/npojiplogo4.jpg" width="93" height="93" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" />
+		</a> 
+	</div>
+	<div id="header2">
+		<img src="../../images/npojip_title.gif" width="700" height="100" border="0" alt="医薬ビジランスセンター(NPOJIP)へようこそ" /> 
+	</div>
+		<div class="menu">
+			<div id="menu1" onmouseover="MenuOn(1)" onmouseout="MenuOff(1)">
+			<a href="1_5.html#" class="menuhead">NPOJIPについて</a>
+				<div class="submenu" id="submenu1">
+					<a href="../dantai/1.html">設立の趣旨</a><span>|</span>
+					<a href="../dantai/2.html">理事長挨拶</a><span>|</span>
+					<a href="../dantai/3.html">所在地と連絡先</a><span>|</span>
+					<a href="../dantai/4.html">活動記録</a><span>|</span>
+					<a href="../dantai/5.html">会員について</a><span>|</span>
+					<a href="../dantai/6.html">お知らせ</a><span>|</span>
+					<a href="../dantai/7.html">著作権・著作</a>
+				</div>
+			</div>
+		<div id="menu2" onmouseover="MenuOn(2)" onmouseout="MenuOff(2)">
+		<a href="1_5.html#" class="menuhead">薬のチェック</a>
+			<div class="submenu" id="submenu2">
+				<a href="../../chk_tip.html">購読のしかた</a><span>|</span>
+				<a href="../../chk_tip_index.html">バックナンバー</a><span>|</span>
+				<a href="../../cgi-bin/pwmgr/index.html">パスワード管理</a><span>|</span>
+			</div>
+		</div>
+			<div id="menu3" onmouseover="MenuOn(3)" onmouseout="MenuOff(3)">
+				<a href="../sokuho/1.html" class="menuhead">速報版</a>
+			</div>
+			<div id="menu4" onmouseover="MenuOn(4)" onmouseout="MenuOff(4)">
+				<a href="1_5.html#" class="menuhead">書籍案内</a>
+					<div class="submenu" id="submenu4">
+						<a href="1.html">薬のチェックは命のチェック</a><span>|</span>
+						<a href="2.html">NPOJIP発行書籍</a><span>|</span>
+						<a href="3.html">書評コーナー</a>
+					</div>
+			</div>
+			<div id="menu5" onmouseover="MenuOn(5)" onmouseout="MenuOff(5)">
+				<a href="1_5.html#" class="menuhead">薬の情報</a>
+					<div class="submenu" id="submenu5">
+						<a href="../kusuri/1.html">解熱・鎮痛剤</a><span>|</span>
+						<a href="../kusuri/2.html">ステロイド</a><span>|</span>
+						<a href="../kusuri/3.html">抗がん剤・免疫抑制剤</a><span>|</span>
+						<a href="../kusuri/4.html">抗うつ剤・安定剤・睡眠剤</a><span>|</span>
+						<a href="../kusuri/5.html">その他</a>
+					</div>
+			</div>
+			<div id="menu6" onmouseover="MenuOn(6)" onmouseout="MenuOff(6)">
+				<a href="1_5.html#" class="menuhead">病気の情報</a>
+					<div class="submenu" id="submenu6">
+						<a href="../byouki/1.html">糖尿病</a><span>|</span>
+						<a href="../byouki/2.html">コレステロール・高脂血症</a><span>|</span>
+						<a href="../byouki/3.html">高血圧症</a><span>|</span>
+						<a href="../byouki/4.html">ぜん息・アレルギー</a><span>|</span>
+						<a href="../byouki/5.html">かぜ・インフルエンザ</a><span>|</span>
+						<a href="../byouki/6.html">その他</a>
+					</div>
+			</div>
+			<div id="menu7" onmouseover="MenuOn(7)" onmouseout="MenuOff(7)">
+				<a href="../faq/1.html" class="menuhead">よくある質問</a>
+			</div>
+		</div><!-- end of menu  -->
+</div><!-- header -->
+<!-- ここまでコピー（メニューとヘダー） -->
+<div id="contents">
+<h2>NPOJIP発行書籍の常備店リスト</h2>
+	<p>当センター発行の書籍を常備している書店は以下のとおりです。
+	ここにある以外の書店でも、注文して取り寄せることができます。
+	また、本誌事務局に直接ご注文いただくこともできます。</p>
+<h4>＜北海道・東北＞</h4>
+	<ul>
+		<li>喜久屋書店　（小樽店、小樽市）</li>
+		<li>CF新川通り医書店　（札幌市）</li>
+		<li>高陽堂　（山形市）</li>
+		<li>丸善　（アエル店、仙台市）</li>
+	</ul>
+<h4>＜関東＞</h4>
+	<ul>
+		<li>オリオン書房　（ノルテ店、東京都立川市）</li>
+		<li>三省堂　（神田本店６階、東京都千代田区）</li>
+		<li>ジュンク堂　（新宿店）</li>
+		<li>志学　（千葉）</li>
+		<li>阪急ブックファースト青葉台</li>
+		<li>ブックファースト新宿店</li>
+		<li>丸善　（津田沼店、千葉県習志野市）</li>
+		<li>丸善　（丸の内本店）</li>
+		<li>メジカルブックス</li>
+		<li>八重洲ブックセンター（本店）</li>
+	</ul>
+<h4>＜東海＞</h4>
+	<ul>
+		<li>大竹書店　（名古屋市）</li>
+		<li>丸善　（新静岡センター店、静岡市）</li>
+		<li>ワニコ　（三重県津市）</li>
+	</ul>
+<h4>＜北陸・信越＞</h4>
+	<ul>
+		<li>喜久屋書店　（高岡店、富山県高岡市）</li>
+		<li>考古堂　（新潟市）</li>
+		<li>ジュンク堂　（新潟店、新潟市）</li>
+		<li>前田　（石川県金沢市）</li>
+		<li>明倫堂　（松本店、長野県松本市）</li>
+	</ul>
+<h4>＜近畿＞</h4>
+	<ul>
+		<li>旭屋　（大阪市北区）</li>
+		<li>喜久屋　（北神戸店、神戸市北区）</li>
+		<li>ジュンク堂　（明石店、兵庫県明石市）</li>
+		<li>ジュンク堂　（大阪本店、大阪市北区）</li>
+		<li>ジュンク堂　（京都店、京都市下京区）</li>
+		<li>ジュンク堂　（三宮店、神戸市中央区）</li>
+		<li>ジュンク堂　（難波店、大阪市中央区）</li>
+		<li>ジュンク堂　（姫路駅店、兵庫県姫路市）</li>
+		<li>蔦屋　（AVIX福知山店、京都府福知山市）</li>
+		<li>丸善　（なんばOCAT店、大阪市浪速区）</li>
+	</ul>
+<h4>＜中国・四国＞</h4>
+	<ul>
+		<li>久米　（徳島市）</li>
+		<li>泰山堂　（鹿田店、岡山市鹿田町）</li>
+		<li>宮脇本店　（香川県高松市）</li>
+		<li>フタバ図書TERA　（広島県安芸郡）</li>
+	</ul>
+<h4>＜九州・沖縄＞</h4>
+	<ul>
+		<li>きんぶん　（熊本市）</li>
+		<li>考文堂　（沖縄県西原町）</li>
+		<li>ジュンク堂　（福岡店、福岡市）</li>
+		<li>ジュンク堂　（鹿児島店）</li>
+		<li>丸善　（福岡ビル店）</li>
+	</ul>
+	</div><!-- contents -->
+<!-- ここからコピー -->
+	<div id="footer">
+	<p>&copy;2000-2015　by　NPOJIP　All　Rights　Reserved.</p>
+	</div><!-- footer -->
+</div><!-- wrapper -->
+<!-- ここまでコピー -->
+</body>
+</html>
+<!-- ここまでコピー -->
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<meta http-equiv="content-style-type" content="text/css">
+<title>パスワード管理</title>
+<style type="text/css">
+<!--
+body,th,td { background:#eee; color:#000; font-size:80%; }
+table.obi { width:400px; }
+table.obi th { padding:5px; background:#666; color:#fff; }
+table.form th,td { background:#fff; color:#000; padding:7px; }
+td.msg { color:green; font-size:75%; }
+table.chg td { padding:0; }
+-->
+</style>
+</head>
+<body>
+<form>
+<input type="button" value="TOPに戻る" onclick=window.open("../../index.html","_top")>
+</form>
+<div align="center">
+
+<table class="obi">
+<tr>
+  <th>パスワード管理</th>
+</tr>
+</table>
+<p>
+	以下のフォームよりパスワードを変更します。<br>
+	処理を選択して送信ボタンを押してください。
+</p>
+<form action="https://npojip.org/cgi-bin/pwmgr/pwmgr.cgi" method="post">
+<table cellspacing="0" border="1" class="form">
+<tr>
+	<th>ログインID</th>
+	<td><input type="text" name="id" size="10"></td>
+</tr><tr>
+	<th>パスワード</th>
+	<td><input type="password" name="pw" size="10"></td>
+</tr><tr>
+	<th valign="top">処理選択</th>
+	<td>
+		<input type="radio" name="mode" value="chg_user" checked>パスワード変更<br>
+		<input type="radio" name="mode" value="del_user">登録の削除<br><br>
+
+		<table align="right" class="chg">
+		<tr>
+			<td rowspan="3" width="40"></td>
+			<td colspan="2" nowrap class="msg">▼パスワード変更の場合</td>
+		</tr><tr>
+			<td align="right" nowrap class="msg">新パスワード</td>
+			<td><input type="password" name="pw1" size="10"></td>
+		</tr><tr>
+			<td align="right" nowrap class="msg">再度入力</td>
+			<td><input type="password" name="pw2" size="10"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<p></p>
+<input type="submit" value="送信する">
+</form>
+
+<table class="obi">
+<tr>
+  <th>パスワード忘れ</th>
+</tr>
+</table>
+<p>
+	以下のフォームよりパスワードの再設定を申請します。<br>
+	必要項目の入力後、送信ボタンを押してください。<br>
+	※ は必須項目です。<br>
+	確認後にユーザIDと新パスワードを郵送します。<br>
+	郵送よりもメールをご希望の時は、<br>
+	メール･アドレスを入力してください。
+</p>
+<form method="post" action="https://npojip.org/cgi-bin/perlmail.cgi">
+<input type="hidden" name="Subject" value="パスワード再設定の申請" />
+<input type="hidden" name="Require" value="ふりがなー姓,ふりがなー名,姓,名,郵便番号１,郵便番号２,住所" />
+
+<table cellspacing="0" border="1" class="form">
+<tr>
+	<th>メールアドレス</th>
+	<td><input name="E-Mail" size="20" maxlength="50" /></td>
+</tr><tr>
+	<th>※ ふりがな 姓</th>
+	<td><input name="ふりがなー姓" size="20" maxlength="50" /></td>
+</tr><tr>
+	<th>※　　　　  名</th>
+	<td><input name="ふりがなー名" size="20" maxlength="50" /></td>
+</tr><tr>
+	<th>※ 氏名　　姓</th>
+	<td><input name="姓" size="20" maxlength="50" /></td>
+</tr><tr>
+	<th>※ 　　　　名</th>
+	<td><input name="名" size="20" maxlength="50" /></td>
+</tr><tr>
+	<th>※ 郵便番号</th>
+	<td><input name="郵便番号１" size="3" maxlength="3" />ー
+<input name="郵便番号２" size="4" maxlength="4" /></td>
+</tr><tr>
+	<th>※ 住所</th>
+	<td><textarea name="住所" rows="5" cols="20"></textarea></td>
+</tr>
+</table>
+<p></p>
+<input type="submit" value="送信する">
+</form>
+
+</div>
+</body>
+</html>
+

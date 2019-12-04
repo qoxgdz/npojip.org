@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="icon" type="image/png" href="../../images/logoicon.png" title="NPOJIP" />
+<link rel="stylesheet" type="text/css" href="../../css/design.css" media="all" />
+<script type="text/javascript" src="../../java/menu.js"></script>
+<!-- 作成日 2019/01/08  00:00:00 -->
+<title>書評コーナー</title>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+	<div id="header1">
+		<a href="../../index.html" target="_top">
+			<img src="../../images/animenpojip.gif" width="93"  height="20" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" /><br />
+			<img src="../../images/npojiplogo4.jpg" width="93" height="93" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" />
+		</a> 
+	</div>
+	<div id="header2">
+		<img src="../../images/npojip_title.gif" width="700" height="100" border="0" 
+			alt="医薬ビジランスセンター(NPOJIP)へようこそ" /> 
+	</div>
+		<div class="menu">
+			<div id="menu1" onmouseover="MenuOn(1)" onmouseout="MenuOff(1)">
+			<a href="3.html#" class="menuhead">NPOJIPについて</a>
+				<div class="submenu" id="submenu1">
+					<a href="../dantai/1.html">設立の趣旨</a><span>|</span>
+					<a href="../dantai/2.html">理事長挨拶</a><span>|</span>
+					<a href="../dantai/3.html">所在地と連絡先</a><span>|</span>
+					<a href="../dantai/4.html">活動記録</a><span>|</span>
+					<a href="../dantai/5.html">会員について</a><span>|</span>
+					<a href="../dantai/6.html">お知らせ</a><span>|</span>
+					<a href="../dantai/7.html">著作権・著作</a>
+				</div>
+			</div>
+		<div id="menu2" onmouseover="MenuOn(2)" onmouseout="MenuOff(2)">
+		<a href="3.html#" class="menuhead">薬のチェック</a>
+			<div class="submenu" id="submenu2">
+				<a href="../../chk_tip.html">購読のしかた</a><span>|</span>
+				<a href="../../chk_tip_index.html">バックナンバー</a><span>|</span>
+				<a href="../../cgi-bin/pwmgr/index.html">パスワード管理</a><span>|</span>
+			</div>
+		</div>
+			<div id="menu3" onmouseover="MenuOn(3)" onmouseout="MenuOff(3)">
+				<a href="../sokuho/1.html" class="menuhead">速報版</a>
+			</div>
+			<div id="menu4" onmouseover="MenuOn(4)" onmouseout="MenuOff(4)">
+				<a href="3.html#" class="menuhead">書籍案内</a>
+					<div class="submenu" id="submenu4">
+						<a href="1.html">薬のチェックは命のチェック</a><span>|</span>
+						<a href="2.html">NPOJIP発行書籍</a><span>|</span>
+						<a href="3.html">書評コーナー</a>
+					</div>
+			</div>
+			<div id="menu5" onmouseover="MenuOn(5)" onmouseout="MenuOff(5)">
+				<a href="3.html#" class="menuhead">薬の情報</a>
+					<div class="submenu" id="submenu5">
+						<a href="../kusuri/1.html">解熱・鎮痛剤</a><span>|</span>
+						<a href="../kusuri/2.html">ステロイド</a><span>|</span>
+						<a href="../kusuri/3.html">抗がん剤・免疫抑制剤</a><span>|</span>
+						<a href="../kusuri/4.html">抗うつ剤・安定剤・睡眠剤</a><span>|</span>
+						<a href="../kusuri/5.html">その他</a>
+					</div>
+			</div>
+			<div id="menu6" onmouseover="MenuOn(6)" onmouseout="MenuOff(6)">
+				<a href="3.html#" class="menuhead">病気の情報</a>
+					<div class="submenu" id="submenu6">
+						<a href="../byouki/1.html">糖尿病</a><span>|</span>
+						<a href="../byouki/2.html">コレステロール・高脂血症</a><span>|</span>
+						<a href="../byouki/3.html">高血圧症</a><span>|</span>
+						<a href="../byouki/4.html">ぜん息・アレルギー</a><span>|</span>
+						<a href="../byouki/5.html">かぜ・インフルエンザ</a><span>|</span>
+						<a href="../byouki/6.html">その他</a>
+					</div>
+			</div>
+			<div id="menu7" onmouseover="MenuOn(7)" onmouseout="MenuOff(7)">
+				<a href="../faq/1.html" class="menuhead">よくある質問</a>
+			</div>
+		</div><!-- end of menu  -->
+</div><!-- header -->
+<!-- ここまでコピー（メニューとヘダー） -->
+<div id="contents">
+<h1>書評コーナー</h1>
+<p>「薬のチェックは命のチェック」の書評欄で紹介した本を種類によって分類しています。</p>
+<p>クリックするとそれぞれのタイトルにジャンプし、書評が読めます。アマゾンを介して購入もできます。</p>
+	<h3>
+	<a href="3.html#kusuri">薬、薬害、医療過誤訴訟、医薬品行政、医薬品産業</a><br />
+	<a href="3.html#karute">カルテ、レセプト</a><br />
+	<a href="3.html#gan">がん</a><br />
+	<a href="3.html#kouketuatu">高血圧症、コレステロール、糖尿病など</a><br />
+	<a href="3.html#infuruenza">インフルエンザ</a><br />
+	<a href="3.html#josei">女性、出産、子ども</a><br />
+	<a href="3.html#ebm">EBM、疫学</a><br />
+	<a href="3.html#communication">コミュニケーション</a><br />
+	<a href="3.html#byouin">病院を知る</a><br />
+	<a href="3.html#sonota">その他</a>
+	</h3>
+
+<a name="kusuri"><br/>　<br /></a>
+<h2>薬、薬害、医療過誤訴訟、医薬品行政、医薬品産業</h2>
+	<h3>
+	<a href="shohyo033_02.html">悪魔のマーケティングータバコ産業が語った真実</a><br />
+	<a href="shohyo017_01.html">医学者は公害事件で何をしてきたのか</a><br />
+	<a href="shohyo006_01.html">医者が薬を疑うとき</a><br />
+	<a href="shohyo046_04.html">医者は現場でどう考えるか</a><br />
+	<a href="shohyo039_02.html">いのちの歌　薬害肝炎、たたかいの奇蹟</a><br />
+	<a href="shohyo044_03.html">医療格差</a><br />
+	<a href="shohyo029_02.html">医療の限界</a><br />
+	<a href="shohyo011_04.html">医療ミス</a><br />
+	<a href="shohyo050_01.html">大笑い！精神医学 精神医学を100%否定する理由</a><br />
+	<a href="shohyo028_01.html">患者の訴え・症状からわかる副作用</a><br />
+	<a href="shohyo030_02.html">官僚に告ぐ！</a><br />
+	<a href="shohyo054_04.html">99.9%が誤用の抗生物質　医者も知らないホントの話</a><br />
+	<a href="shohyo024_02.html">京都ジフテリア予防接種禍事件　６９人目の犠牲者</a><br />
+	<a href="shohyo044_01.html">薬と社会をつなぐキーワード事典</a><br />
+	<a href="shohyo014_03.html">薬の診察室　薬と毒の見分け方</a><br />
+	<a href="shohyo027_02.html">検証C型肝炎　薬害を放置した国の大罪</a><br />
+	<a href="shohyo025_04.html">抗うつ薬の功罪—SSRI論争と訴訟—</a><br />
+	<a href="shohyo025_03.html">抗うつ薬の時代—うつ病治療薬の光と影—</a><br />
+	<a href="shohyo023_02.html">この命、つむぎつづけて</a><br />
+	<a href="shohyo025_01.html">怖くて飲めない！　薬を売るために病気はつくられる</a><br />
+	<a href="shohyo049_01.html">ジフテリア予防接種禍事件 戦後史の闇と子どもたち</a><br />
+	<a href="shohyo050_03.html">自閉症論の原点 定型発達者との分断線を越える</a><br />
+	<a href="shohyo027_01.html">人生を変えた内部告発</a><br />
+	<a href="shohyo037_03.html">新薬ひとつに1000億円！？</a><br />
+	<a href="shohyo050_04.html">精神科医 隠された真実 なぜ心の病を治せないのか</a><br />
+	<a href="shohyo011_02.html">世界医薬品産業の犯罪</a><br />
+	<a href="shohyo000_02.html">世界のエッセンシャルドラッグ—必須医薬品</a><br />
+	<a href="shohyo022_01.html">世界ブランド企業黒書　人と地球を食い物にする多国籍企業</a><br />
+	<a href="shohyo034_01.html">たった一人で国・薬害裁判に勝つ</a><br />
+	<a href="shohyo021_03.html">誰も書かなかった厚生省</a><br />
+	<a href="shohyo007_02.html">誕生死</a><br />
+	<a href="shohyo016_01.html">DES薬害−被害と救済の検証</a><br />
+	<a href="shohyo051_01.html">デタラメ健康科学　代替療法・製薬産業：メディアのウソ</a><br />
+	<a href="shohyo040_04.html">認知症にさせられる！</a><br />
+	<a href="shohyo023_01.html">のんではいけない薬—必要な薬と不必要な薬</a><br />
+	<a href="shohyo050_02.html">発達障害と呼ばないで</a><br />
+	<a href="shohyo022_02.html">ビッグ・ファーマ　製薬会社の真実</a><br />
+	<a href="shohyo046_01.html">ひとはなぜ乳房を求めるのか　危機の時代のジェンダー表象</a><br />
+	<a href="shohyo008_01.html">ぼくの「星の王子さま」へ　医療裁判10年の記録</a><br />
+	<a href="shohyo021_02.html">薬害肝炎　誰がC型肝炎を「国民病」にしたか</a><br />
+	<a href="shohyo038_02.html">薬害肝炎とのたたかい　350万人の願いをかけて</a><br />
+	<a href="shohyo000_01.html">薬害はなぜなくならないか</a><br />
+	<a href="shohyo019_02.html">薬害を追う記者たち</a><br />
+	<a href="shohyo030_01.html">やっぱり危ないタミフル</a><br />
+	<a href="shohyo043_04.html">予防接種は「効く」のか？　ワクチン嫌いを考える</a><br />
+	<a href="shohyo053_04.html">読んでやめる精神の薬</a><br />
+	<a href="shohyo018_03.html">レセプト審査の不可思議−EPO訴訟から学ぶ不当審査との闘い方</a>
+	</h3>
+<a name="karute"><br/>　<br /></a>
+<h2>カルテ、レセプト</h2>
+	<h3>
+	<a href="shohyo006_03.html">カルテ　　手に入れるための5つの方法</a><br />
+	<a href="shohyo017_02.html">カルテ改ざん</a><br />
+	<a href="shohyo006_02.html">レセプト開示で不正医療を見破ろう！　医療費3割負担時代の自己防衛術</a><br />
+	<a href="shohyo018_03.html">"レセプト審査"の不可思議−EPO訴訟から学ぶ不当審査との闘い方</a>
+	</h3>
+<a name="gan"><br/>　<br /></a>
+<h2>がん</h2>
+	<h3>
+	<a href="shohyo036_01.html">明るいがん治療３</a><br />
+	<a href="shohyo043_03.html">あなたの癌は、がんもどき</a><br />
+	<a href="shohyo032_02.html">受ける?受けない?エックス線CT検査 増補新版ー医療被ばくのリスク</a><br />
+	<a href="shohyo009_02.html">患者よ、がんと闘うな</a><br />
+	<a href="shohyo039_01.html">癌患者を救いたい　PSA検診のウソ</a><br />
+	<a href="shohyo019_01.html">がん患者は家に帰ろう</a><br />
+	<a href="shohyo010_02.html">がんはなぜ問題視されるのか</a><br />
+	<a href="shohyo047_02.html">がん放置療法のすすめー患者150人の証言ー</a><br />
+	<a href="shohyo007_03.html">食べ物とがん予防</a><br />
+	<a href="shohyo045_01.html">低線量：内部被曝の危険性　その医学的根拠</a><br />
+	<a href="shohyo007_01.html">乳がん　あなたの答えがみつかる本</a><br />
+	<a href="shohyo044_02.html">放射線被曝　CT検査でがんになる</a>
+	</h3>
+<a name="kouketuatu"><br/>　<br /></a>
+<h2>高血圧症、コレステロール、糖尿病など</h2>
+	<h3>
+	<a href="shohyo043_01.html">嘘をつくコレステロール</a><br />
+	<a href="shohyo023_03.html">検査値と病気　間違いだらけの診断基準</a><br />
+	<a href="shohyo020_01.html">高血圧は薬で下げるな！</a><br />
+	<a href="shohyo037_01.html">コレステロール　嘘とプロパガンダ</a><br />
+	<a href="shohyo048_03.html">コレステロールの欺瞞（うそ）</a><br />
+	<a href="shohyo048_02.html">コレステロールは高いほうが長生きする</a><br />
+	<a href="shohyo056_04.html">作用メカニズムから見たコレステロール低下医療の危険性</a><br />
+	<a href="shohyo015_01.html">中高年健康常識を疑う</a><br />
+	<a href="shohyo041_01.html">長寿のためのコレステロールガイドライン（2010年版）</a><br />
+	<a href="shohyo048_01.html">100歳まで長生きできるコレステロール革命</a>
+	</h3>
+<a name="infuruenza"><br/>　<br /></a>
+<h2>インフルエンザ</h2>
+	<h3>
+	<a href="shohyo013_04.html">医者には聞けない　インフルエンザ・ワクチンと薬</a><br />
+	<a href="shohyo029_03.html">インフルエンザワクチンは打たないで！</a><br />
+	<a href="shohyo035_01.html">「史上最悪のインフルエンザ〜忘れられたパンデミック」</a><br />
+	<a href="shohyo053_03.html">新型インフルエンザパンデミックの黙示録―一人の医師の論理学的考察</a><br />
+	<a href="shohyo034_03.html">ぬれマスク先生の免疫革命</a>
+	</h3>
+<a name="josei"><br/>　<br /></a>
+<h2>女性、出産、子ども</h2>
+	<h3>
+	<a href="shohyo041_02.html">赤ちゃん・子どものアトピー治療―ステロイドにNO!を</a><br />
+	<a href="shohyo012_01.html">子どもを選ばないことを選ぶ</a><br />
+	<a href="shohyo056_03.html">子どもを病気にする親、健康にする親</a><br />
+	<a href="shohyo012_03.html">小児科へ行く前に　子どもの症状の見分け方</a><br />
+	<a href="shohyo013_03.html">陣痛促進剤　あなたはどうする</a><br />
+	<a href="shohyo030_03.html">生物の進化に学ぶ乳幼児期の子育て</a><br />
+	<a href="shohyo007_02.html">誕生死</a><br />
+	<a href="shohyo031_01.html">ちーちゃん　誕生死・10日間の思い出</a><br />
+	<a href="shohyo040_03.html">恥と名誉—移民二世・ジェンダー・カーストの葛藤を生き延びて</a><br />
+	<a href="shohyo032_03.html">「母」たちの戦争と平和ー戦争を知らないわたしとあなたに</a><br />
+	<a href="shohyo011_01.html">ピルの危険な話</a><br />
+	<a href="shohyo008_01.html">ぼくの「星の王子さま」へ　医療裁判10年の記録</a><br />
+	<a href="shohyo010_01.html">まちがいだらけの予防接種</a><br />
+	<a href="shohyo024_03.html">みんなで子育て！　からだ編</a><br />
+	<a href="shohyo015_03.html">昔の女性はできていた　忘れられている−女性の身体に"在る"力</a><br />
+	<a href="shohyo011_03.html">ようこそダウン症の赤ちゃん</a><br />
+	<a href="shohyo033_01.html">わたしを束ねないで</a>
+	</h3>
+<a name="ebm"><br/>　<br /></a>
+<h2>EBM、疫学</h2>
+	<h3>
+	<a href="shohyo033_03.html">アトピー性皮膚炎ー患者1000人の証言</a><br />
+	<a href="shohyo017_01.html">医学者は公害事件で何をしてきたのか</a><br />
+	<a href="shohyo054_02.html">医学的根拠とは何か</a><br />
+	<a href="shohyo045_03.html">医学と仮説</a><br />
+	<a href="shohyo032_02.html">受ける?受けない?エックス線CT検査 増補新版ー医療被ばくのリスク</a><br />
+	<a href="shohyo018_02.html">患者は何でも知っている−EBM時代の医師と患者</a><br />
+	<a href="shohyo054_03.html">この世で一番面白い統計学</a><br />
+	<a href="shohyo014_01.html">市民のための疫学入門　医学ニュースから環境裁判まで</a><br />
+	<a href="shohyo019_03.html">数字に弱いあなたの驚くほど危険な生活</a><br />
+	<a href="shohyo009_01.html">図説　国民衛生の動向２００２</a><br />
+	<a href="shohyo007_03.html">食べ物とがん予防</a><br />
+	<a href="shohyo024_01.html">ナースが学ぶ「患者の権利」講座〜アドボケイトになるための２５の心得〜</a><br />
+	<a href="shohyo043_02.html">病気の数字のウソを見抜く　医者に聞くべき10の質問</a><br />
+	<a href="shohyo026_02.html">剖検率100％の町　九州大学久山町研究室との40年</a><br />
+	<a href="shohyo010_01.html">まちがいだらけの予防接種</a><br />
+	<a href="shohyo020_02.html">臨床医学研究序説−方法論と倫理−</a>
+	</h3>
+<a name="communication"><br/>　<br /></a>
+<h2>コミュニケーション</h2>
+	<h3>
+	<a href="shohyo015_02.html">いい加減に生きる　スピリチュアル仏教のすすめ３３</a><br />
+	<a href="shohyo034_02.html">「生きづらさ」について　貧困、アイデンティティ、ナショナリズム</a><br />
+	<a href="shohyo047_03.html">原発危機と「東大話法」ー傍観者の論理・欺瞞の言語ー</a><br />
+	<a href="shohyo016_02.html">幸せをよぶコミュニケーション　サップ式からエスペール法へ</a><br />
+	<a href="shohyo008_02.html">成熟した死の選択　インフォームドチョイス</a><br />
+	<a href="shohyo013_01.html">すぐに役立つ外来での患者対応学</a><br />
+	<a href="shohyo037_04.html">ためらいの看護ー臨床日誌から</a><br />
+	<a href="shohyo046_03.html">ドクターズルール425　—医師の心得集</a><br />
+	<a href="shohyo020_04.html">バリデーション−痴呆症の人々との超コミュニケーション法−</a><br />
+	<a href="shohyo047_01.html">安心ひきこもりライフ</a>
+	</h3>
+<a name="byouin"><br/>　<br /></a>
+<h2>病院を知る</h2>
+	<h3>
+	<a href="shohyo034_04.html">医者と患者と病院と</a><br />
+	<a href="shohyo008_03.html">これで安心　病院選びの「掟」１１１</a><br />
+	<a href="shohyo013_02.html">精神科医はいらない</a><br />
+<a href="shohyo047_04.html">潜入　閉鎖病棟ー「安信・安全」監視社会の精神病院ー</a><br />
+	<a href="shohyo038_01.html">新版 病院で聞くことば辞典</a><br />
+	<a href="shohyo006_04.html">病院で聞く言葉辞典</a>
+	</h3>
+<a name="sonota"><br/>　<br /></a>
+<h2>その他</h2>
+	<h3>
+	<a href="shohyo021_01.html">アキラの地雷博物館とこどもたち</a><br />
+	<a href="shohyo054_01.html">アトピーの女王</a><br />
+	<a href="shohyo053_05.html">アノスミア　わたしが嗅覚を失ってから取り戻すまでの物語</a><br />
+	<a href="shohyo049_04.html">「甘え」の構造</a><br />
+	<a href="shohyo014_02.html">ある日、化学物質過敏症</a><br />
+	<a href="shohyo028_02.html">痛みと麻痺を生きる　脊髄損傷と痛み</a><br />
+	<a href="shohyo032_02.html">受ける?受けない?エックス線CT検査 増補新版ー医療被ばくのリスク</a><br />
+	<a href="shohyo037_02.html">牛を屠る</a><br />
+	<a href="shohyo053_06.html">思ってたウツとちがう! 「新型ウツ」うちの夫場合 [コミック]</a><br />
+	<a href="shohyo044_04.html">おれ　アペール症でも大丈夫</a><br />
+	<a href="shohyo051_02.html">女言葉と日本語</a><br />
+	<a href="shohyo048_05.html">科学者の不正行為　捏造・偽造・盗用</a><br />
+	<a href="shohyo056_01.html">学校英語教育は何のため？</a><br />
+	<a href="shohyo031_02.html">花粉症は環境問題である</a><br />
+	<a href="shohyo038_03.html">傷はぜったい消毒するなー生態系としての皮膚の科学</a><br />
+	<a href="shohyo020_03.html">気の発見</a><br />
+	<a href="shohyo045_06.html">競争と公平感　市場経済の本当のメリット</a><br />
+	<a href="shohyo045_05.html">原発のウソ</a><br />
+	<a href="shohyo049_05.html">戸籍って何だ 「差別を作り出すもの」（プロブレムＱ＆Ａ）</a><br />
+	<a href="shohyo036_02.html">坂の上の雲</a><br />
+	<a href="shohyo026_03.html">シネマの中の人間と医療　エシックス・シアターへの招待</a><br />
+	<a href="shohyo053_02.html">死の灰と闘う科学者</a><br />
+	<a href="shohyo052_01.html">柔道事故</a><br />
+	<a href="shohyo052_02.html">首相官邸で働いて初めてわかったこと</a><br />
+	<a href="shohyo049_06.html">ショージとタカオ</a><br />
+	<a href="shohyo053_01.html">新編　琅玕記</a><br />
+	<a href="shohyo055_02.html">精神科医　隠された真実　なぜ心の病を治せないのか</a><br />
+	<a href="shohyo039_03.html">性犯罪被害にあうということ</a><br />
+	<a href="shohyo045_02.html">生命のきずな</a><br />
+	<a href="shohyo055_03.html">絶望の裁判所</a><br />
+	<a href="shohyo055_04.html">戦争の甘い誘惑</a><br />
+	<a href="shohyo056_02.html">そこが知りたい在宅療養Q＆A</a><br />
+	<a href="shohyo040_02.html">大都市のひとり暮らし高齢者と社会的孤立</a><br />
+	<a href="shohyo049_03.html">「縮み」志向の日本人</a><br />
+	<a href="shohyo012_02.html">ナイチンゲール　神話と真実</a><br />
+	<a href="shohyo048_04.html">なのはな</a><br />
+	<a href="shohyo025_02.html">二十一世紀に生きる君たちへ</a><br />
+	<a href="shohyo055_01.html">人間と動物の病気を一緒にみる　医療を変える汎動物学の発想</a><br />
+	<a href="shohyo032_03.html">「母」たちの戦争と平和ー戦争を知らないわたしとあなたに</a><br />
+	<a href="shohyo046_02.html">仏教、本当の教え　—インド、中国、日本の理解と誤解</a><br />
+	<a href="shohyo045_04.html">不眠症</a><br />
+	<a href="shohyo035_02.html">ペンギンもクジラも秒速2メートルで泳ぐ　ハイテク海洋動物学への招待</a><br />
+	<a href="shohyo051_04.html">本当は危ない植物油　その毒性と環境ホルモン作用</a><br />
+	<a href="shohyo029_01.html">丸腰のボランティア　すべて現場から学んだ</a><br />
+	<a href="shohyo032_01.html">ミトコンドリアが進化を決めた</a><br />
+	<a href="shohyo018_01.html">もう牛を食べても安心か</a><br />
+	<a href="shohyo051_03.html">「森の長城」が日本を救う</a><br />
+	<a href="shohyo041_03.html">ユネスコ生命倫理学必修〈第1部〉授業の要目、倫理教育履修課程</a><br />
+	<a href="shohyo049_02.html">世にも奇妙な人体実験の歴史</a><br />
+	<a href="shohyo040_01.html">ルリボシカミキリの青</a><br />
+	<a href="shohyo026_01.html">ワーキングプア　いくら働いても報われない時代が来る</a>
+	</h3>
+	
+	
+	
+	</div><!-- contents -->
+<!-- ここからコピー -->
+	<div id="footer">
+	<p>&copy;2000-2015　by　NPOJIP　All　Rights　Reserved.</p>
+	</div><!-- footer -->
+</div><!-- wrapper -->
+<!-- ここまでコピー -->
+</body>
+</html>
+<!-- ここまでコピー -->

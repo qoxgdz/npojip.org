@@ -1,0 +1,1068 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="icon" type="image/png" href="images/logoicon.png" title="NPOJIP" />
+<link rel="stylesheet" type="text/css" href="css/tip.css" media="all" />
+<script type="text/javascript" src="java/menu.js"></script>
+<!-- 作成日 2019/11/04 00:00:00 -->
+<title>薬のチェックTIP バックナンバー</title>
+</head>
+<body>
+<!--#exec cgi="cgi-bin/pwmgr/pwlog.cgi"-->
+<div class="wrapper">
+
+<div class="header">
+	<div id="header1">
+		<a href="index.html" target="_top">
+			<img src="images/animenpojip.gif" width="93"  height="20" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" /><br />
+			<img src="images/npojiplogo4.jpg" width="93" height="93" border="0" 
+				alt="Non-Profit Organization Japan Institute of Pharmacovigilance for Evidence-based Healthcare" />
+		</a> 
+	</div>
+	<div id="header2">
+		<img src="images/chk_tip_title.gif" width="700" height="100" border="0" 
+			alt="医薬ビジランスセンター(NPOJIP)へようこそ" /> 
+	</div>
+	<div class="menu">
+		<div id="menu1" onmouseover="MenuOn(1)" onmouseout="MenuOff(1)">
+		<a href="chk_tip_index.html#" class="menuhead">薬のチェック</a>
+			<div class="submenu" id="submenu1">
+				<a href="chk_tip.html">購読のしかた</a><span>|</span>
+				<a href="chk_tip_index.html">バックナンバー</a><span>|</span>
+				<a href="cgi-bin/pwmgr/index.html">パスワード管理</a><span>|</span>
+			</div>
+		</div>
+		<div id="menu2" onmouseover="MenuOn(2)" onmouseout="MenuOff(2)">
+		<a href="contents/sokuho/1.html" class="menuhead">速報版</a>
+		</div>
+		<div id="menu3" onmouseover="MenuOn(3)" onmouseout="MenuOff(3)">
+		<a href="chk_tip_index.html#" class="menuhead">書籍案内</a>
+			<div class="submenu" id="submenu3">
+				<a href="contents/book/1.html">薬のチェックは命のチェック</a><span>|</span>
+				<a href="contents/book/2.html">NPOJIP発行書籍</a><span>|</span>
+				<a href="contents/book/3.html">書評コーナー</a>
+			</div>
+		</div>
+		<div id="menu4" onmouseover="MenuOn(4)" onmouseout="MenuOff(4)">
+		<a href="chk_tip_index.html#" class="menuhead">疑問や感想など</a>
+			<div class="submenu" id="submenu4">
+				<a href="applicationforms/kanso1.html">疑問や質問</a>
+				<a href="applicationforms/kanso2.html">感想や意見</a>
+			</div>
+		</div>
+		<div id="menu5" onmouseover="MenuOn(5)" onmouseout="MenuOff(5)">
+				<a href="contents/link/1.html" class="menuhead">リンク</a>
+		</div>
+	</div><!-- end of menu  -->
+</div><!-- header -->
+<!-- ここまでコピー（メニューとヘダー） -->
+
+<div id="contents">
+<h1>薬のチェック　バックナンバー　一覧</h1>
+<p>NPOJIPが編集・発行する医薬品情報誌（1・3・5・7・9・11月の年6回）です。2015年1月に 「<a href="contents/book/1.html">薬のチェックは命のチェック</a>」をリニューアルし、医療者にとってより一層読みごたえのある情報を提供しています。</p>
+<p>各号の目次と購入は下記バックナンバー一覧の該当号をクリックしてください。</p>
+<p>★年間購読をしている方は、各号の表紙画像をクリックして、IDとパスワードを入力（必ず半角で）すると、PDF版を読むことができます。しかし、年度が変わると読めなくなります。</p>
+<p>前年度のバックナンバーのPDF版を希望される方は、<a href="applicationforms/kanso3.html">こちらのフォーム</a>から事務局へご連絡ください。直接、PDFをお送りします。なお、早めのダウンロードをおすすめします。</p>
+<p>★年間購読申込みがまだの方は、<a href="chk_tip.html">「購読のしかた」</a>ページをご覧ください。</p>
+<p>単品購入は、バックナンバーも最新号も、各号1000円（税、送料別）</p>
+<p>バックナンバーの年間全号（6冊）を一括購入の場合は、6000円（税別）、送料無料、</p>
+<p>
+	<table>
+		<tr>
+			<td>Vol.19（2019年発行）年間全号（6冊）</td>
+			<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP-Vol19(ALL)" name="shouhinmei" />
+			<input type="hidden" value="6000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="注文はこちら" name="submit" />
+			</form>
+			</td>
+		<tr>
+	</table>
+	<table>
+		<tr>
+			<td>Vol.18（2018年発行）年間全号（6冊）</td>
+			<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP-Vol18(ALL)" name="shouhinmei" />
+			<input type="hidden" value="6000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="注文はこちら" name="submit" />
+			</form>
+			</td>
+		<tr>
+	</table>
+	<table>
+		<tr>
+			<td>Vol.17（2017年発行）年間全号（6冊）</td>
+			<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP-Vol17(ALL)" name="shouhinmei" />
+			<input type="hidden" value="6000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="注文はこちら" name="submit" />
+			</form>
+			</td>
+		<tr>
+	</table>
+	<table>
+		<tr>
+			<td>Vol.16（2016年発行）年間全号（6冊）</td>
+			<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP-Vol16(ALL)" name="shouhinmei" />
+			<input type="hidden" value="6000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="注文はこちら" name="submit" />
+			</form>
+			</td>
+		<tr>
+	</table>
+	<table>
+		<tr>
+			<td>Vol.15（2015年発行）年間全号（6冊）</td>
+			<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP-Vol15(ALL)" name="shouhinmei" />
+			<input type="hidden" value="6000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="注文はこちら" name="submit" />
+			</form>
+			</td>
+		<tr>
+	</table>
+</p>
+
+
+<h1>Vol.19（2019年発行）</h1>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol19-No85">No.85.（9月）
+				<span class="hsub">　成人慢性便秘症用剤 ラグノスNF経口ゼリー </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol19-No84">No.84.（7月）
+				<span class="hsub">　慢性便秘用剤モビコール配合剤 </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol19-No83">No.83.（5月）
+				<span class="hsub">　C型肝炎用の新直接作用型抗ウイルス剤 </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol19-No82">No.82.（3月）
+				<span class="hsub">　オピオイド過量における経鼻ナロキソン </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol19-No81">No.81.（1月）
+				<span class="hsub">　偽膜性腸炎用剤 フィダキソマイシン </span></a></td>
+</tr>
+</table>
+
+
+<h1>Vol.18（2018年発行）　『<a href="chk_tip/No82-f06.pdf">索引</a>』</h1>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No80">No.80.（11月）
+				<span class="hsub">　帯状疱疹サブユニットワクチン　シングリックス </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No79">No.79.（9月）
+				<span class="hsub">　新コレステロール低下剤 PCSK9阻害剤 </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No78">No.78.（7月）
+				<span class="hsub">　ロミタピド、ヒドロモルフォン </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No77">No.77.（5月）
+				<span class="hsub">　グアンファシン（商品名インチュニブ） </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No76">No.76.（3月）
+				<span class="hsub">　バレニクリン（商品名：チャンピックス） </span></a></td>
+</tr>
+</table>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol18-No75">No.75.（1月）
+				<span class="hsub">　睡眠剤ラメルテオン（商品名ロゼレム） </span></a></td>
+</tr>
+</table>
+<h1>Vol.17（2017年発行）</h1>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No74">No.74.（11月）
+				<span class="hsub">　睡眠剤スボレキサント（商品名ベルソムラ）</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No73">No.73.（9月）
+				<span class="hsub">　四種混合ワクチン（DTP-IPV）</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No72">No.72.（7月）
+				<span class="hsub">　小児への肺炎球菌ワクチン、Hib（ヒブ）ワクチンは？</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No71">No.71.（5月）
+				<span class="hsub">　早期発見乳がんの標準治療は どうするか？</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No70">No.70.（3月）
+				<span class="hsub">　肺炎球菌結合型ワクチン</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol17-No69">No.69.（1月）
+				<span class="hsub">　新コレステロール低下剤(PCSK9 阻害剤) </span></a></td>
+</tr>
+</table>
+<h1>Vol.16（2016年発行）</h1>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No68">No.68.（11月）
+				<span class="hsub">　リラグルチド（商品名ビクトーザ）心不全を悪化させる</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No67">No.67.（9月）
+				<span class="hsub">　アカンプロサート（商品名レグテクト）断酒継続は可能か</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No66">No.66.（7月）
+				<span class="hsub">　ニボルマブ(商品名オプジーボ)　寿命短縮の可能性も 厳しい使用制限をすべき</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No65">No.65.（5月）
+				<span class="hsub">　ベバシズマブ（商品名アバスチン）理論上は良さそうだが、実地診療では不要</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No64">No.64.（3月）
+				<span class="hsub">　デュタステリド(商品名ザガーロ)　男性型脱毛症にわずかな効果、重大な害</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol16-No63">No.63.（1月）
+				<span class="hsub">　メマンチン　（商品名メマリー） 認知症に無用</span></a></td>
+</tr>
+</table>
+<h1>Vol.15（2015年発行）</h1>
+<table class="mag" cellpadding="5">  
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No62">No.62.（11月）
+				<span class="hsub">　認知症に抑肝散　重症血管腫にプロプラノロール、HPVワクチン</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No61">No.61.（9月）
+				<span class="hsub">　抗Cウイルス剤ハーボニー、ワルファリンの指摘INR、高尿酸血症</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No60">No.60.（7月）
+				<span class="hsub">　脳梗塞にアルテプラーゼ、ソホスブビル、抗生物質で低血糖</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No59">No.59.（5月）
+				<span class="hsub">　抗凝固剤ダビガトラン、ルビプロストン、高齢者薬剤ガイドライン</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No58">No.58.（3月）
+				<span class="hsub">　がん疼痛治療メサドン、カバジタキセル、H.pirori除菌とで寿命</span></a></td>
+</tr>
+<tr>
+	<td class="maglist"><a href="chk_tip_index.html#Vol15-No57">No.57.（1月）
+				<span class="hsub">　血糖降下剤SGLT-2阻害剤、メトロニダゾール、HPVワクチンの害</span></a></td>
+</tr>
+</table>
+
+<a name="Vol19-No85"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No85-hyoshi.jpg"  width="700" alt="NO.85表紙" />
+<br clear="all" />
+
+<a href="chk_tip.html#No84">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol19-No85" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2019&vo=19&nu=85">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol19-No84"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No84-hyoshi.jpg"  width="700" alt="NO.84表紙" />
+<br clear="all" />
+
+<a href="chk_tip.html#No84">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol19-No84" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2019&vo=19&nu=84">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol19-No83"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No83-hyoshi.jpg"  width="700" alt="NO.83表紙" />
+<br clear="all" />
+
+<a href="chk_tip.html#No83">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol19-No83" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&vo=19&nu=83">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol19-No82"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No82-hyoshi.jpg"  width="700" alt="NO.82表紙" />
+<br clear="all" />
+
+<a href="chk_tip.html#No82">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol19-No82" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2019&vo=19&nu=82">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol19-No81"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No81-hyoshi.jpg"  width="700" alt="NO.81表紙" />
+<br clear="all" />
+
+<a href="chk_tip/No81-f06.pdf">No.81の用語索引</a><br />
+
+<a href="chk_tip.html#No81">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol19-No81" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2019&vo=19&nu=81">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No80"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No80-hyoshi.jpg"  width="700" alt="NO.80表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No80">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No80" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=80">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No79"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No79-hyoshi.jpg"  width="700" alt="NO.79表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No79">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No79" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=79">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No78"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No78-hyoshi.jpg"  width="700" alt="NO.78表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No78">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No78" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=78">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No77"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No77-hyoshi.jpg"  width="700" alt="NO.77表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No77">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No77" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=77">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No76"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No76-hyoshi.jpg"  width="700" alt="NO.76表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No76">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No76" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=76">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol18-No75"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No75-hyoshi.jpg"  width="700" alt="NO.75表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No75">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol18-No75" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2018&vo=18&nu=75">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No74"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No74-hyoshi.jpg"  width="700" alt="NO.74表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No74">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No74" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=74">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No73"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No73-hyoshi.jpg"  width="700" alt="NO.73表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No73">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No73" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=73/">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No72"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No72-hyoshi.jpg"  width="700" alt="NO.72表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No72">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No72" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=72">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No71"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No71-hyoshi.jpg"  width="700" alt="NO.71表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No71">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No71" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=71">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No70"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No70-hyoshi.jpg"  width="700" alt="NO.70表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No70">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No70" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=70">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol17-No69"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No69-hyoshi.jpg"  width="700" alt="NO.69表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No69">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol17-No69" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2017&vo=17&nu=69">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No68"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No68-hyoshi.jpg"  width="700" alt="NO.68表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No68">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No68" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=68">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No67"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No67-hyoshi.jpg"  width="700" alt="NO.67表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No67">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No67" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=67">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No66"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No66-hyoshi.jpg"  width="700" alt="NO.66表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No66">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No66" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=66">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No65"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No65-hyoshi.jpg"  width="700" alt="NO.65表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No65">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No65" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=65">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No64"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No64-hyoshi.jpg"  width="700" alt="NO.64表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No64">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No64" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=64">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol16-No63"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No63-hyoshi.jpg"  width="700" alt="NO.63表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No63">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol16-No63" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2016&vo=16&nu=63">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No62"></a>
+<hr style="height:4px; background-color:#ff9999;">
+<img src="images/kikanshi/No62-hyoshi.jpg"  width="700" alt="NO.62表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No62">記事概略はこちら</a>
+
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No62" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=62">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No61"></a>
+<hr style="height:4px; background-color:#ff9999;">
+
+<img src="images/kikanshi/No61-hyoshi.jpg"  width="700" alt="NO.61表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No61">記事概略はこちら</a>
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No61" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=61">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No60"></a>
+<hr style="height:4px; background-color:#ff9999;">
+
+<img src="images/kikanshi/No60-hyoshi.jpg"  width="700" alt="NO.60表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No60">記事概略はこちら</a>
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No60" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=60">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No59"></a>
+<hr style="height:4px; background-color:#ff9999;">
+
+<img src="images/kikanshi/No59-hyoshi.jpg"  width="700" alt="NO.59表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No59">記事概略はこちら</a>
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No59" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=59">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No58"></a>
+<hr style="height:4px; background-color:#ff9999;">
+
+<img src="images/kikanshi/No58-hyoshi.jpg"  width="700" alt="NO.58表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No58">記事概略はこちら</a>
+<table>
+	<tr>
+		<td class="magorder">紙媒体（雑誌）の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No58" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=58">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+<br /><br /><br />
+
+<a name="Vol15-No57"></a>
+<hr style="height:4px; background-color:#ff9999;">
+
+<h4><a href="chk_tip/TIPNo57-tuiho.html">薬のチェックTIPNo57追補資料とSGLT-2阻害剤に関する最新の添付文書改訂</a>を掲載しました。</h4>
+<img src="images/kikanshi/No57-hyoshi.jpg"  width="700" alt="NO.57表紙" />
+<br clear="all" />
+<a href="chk_tip.html#No57">記事概略はこちら</a>
+<table>
+	<tr>
+		<td class="magorder">紙媒体の購入</td>
+		<td class="magorder">
+			<form action="https://npojip.org/cgi-bin/acart/setcook.cgi" method="post">
+			<input type="hidden"  value="KusurinoCheckTIP Vol15-No57" name="shouhinmei" />
+			<input type="hidden" value="1000" name="kakaku" />
+			<input type="hidden" value="1" name="kazu" />
+			<input type="submit" value="書籍注文かごに入れる" name="submit" />
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td class="magorder">電子版（電子書籍）の購入</td>
+		<td class="magorder"><a href="https://mol.medicalonline.jp/archive/search?jo=ao2kusul&ye=2015&vo=15&nu=57">メディカルオンライン</a></td>
+	</tr>
+</table>
+
+
+</div><!-- contents -->
+
+<!-- ここからコピー -->
+
+<div id="footer">
+	<p>&copy;2000-2019　by　NPOJIP　All　Rights　Reserved.</p>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>
+<!-- ここまでコピー -->
